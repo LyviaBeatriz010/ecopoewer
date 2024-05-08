@@ -22,4 +22,9 @@ public class RadialFill : MonoBehaviour
         }
         
     }
+    
+    public void Clicou()
+        {
+            Debug.Log("cLICOU!!");
+        }
 }
