@@ -1,33 +1,96 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
+using Debug = UnityEngine.Debug;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public int valorCliques = 1;
-    public int valorInicial = 0;
+    public EcoEnum.Meta metaBaseAtual;
+    private int anoAtual;
+    public int valorPorClique = 1;
+    public int energiaAtual = 0;
     public TextMeshProUGUI textoCliques;
 
     public TextMeshProUGUI textoTimer;
+
+    public TextMeshProUGUI textoAno;
 
     public float tempoTotal = 70;
     public float tempoAtual;
   
     private TimeSpan cronometro;
     
+    public int metaAtual;
+
+    public bool acabou = false;
+    
     
    
     void Start()
     {
-        Cliques();
-
+        ChecarFase();
         tempoAtual = tempoTotal;
+        metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
+       
+        
+        Debug.Log("ano atual: "+ (PlayerPrefs.GetInt("ANOATUAL",2026))); 
+        Debug.Log("deficit do ano anterior: "+PlayerPrefs.GetInt("DEFICITMETA",0)); 
+    }
+
+    public void ChecarFase()
+    {
+        
+        anoAtual = PlayerPrefs.GetInt("ANOATUAL", 2026);
+
+        textoAno.text = anoAtual.ToString();
+
+        switch (anoAtual)
+        {
+            case 2026:
+                metaBaseAtual = EcoEnum.Meta.Ano2026;
+                break;
+            case 2027:
+                metaBaseAtual = EcoEnum.Meta.Ano2027;
+                break;
+            case 2028:
+                metaBaseAtual = EcoEnum.Meta.Ano2028;
+                break;
+            case 2029:
+                metaBaseAtual = EcoEnum.Meta.Ano2029;
+                break;
+            case 2030:
+                metaBaseAtual = EcoEnum.Meta.Ano2030;
+                break;
+            default:
+                break;
+        }
+
+        
     }
 
     // Update is called once per frame
     void Update()
+    {
+        if (!acabou)
+        {
+            FaseRodando();
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.Space))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+        
+    }
+
+    public void FaseRodando()
     {
         if (tempoAtual > 0)
         {
@@ -37,33 +100,43 @@ public class GameManager : MonoBehaviour
         {
             tempoAtual = 0;
             
-            
-            
+            if (energiaAtual < metaAtual)
+            {
+                PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
+                Debug.Log("GamerOver");
+                Passarfase();
+            }
         }
         
         
         cronometro = TimeSpan.FromSeconds(tempoAtual);
         textoTimer.text = cronometro.ToString(@"mm\:ss");
 
+        // Cliques();
+       
+        // vitory
+        if (tempoAtual > 0 && energiaAtual >= metaAtual)
+        {
+            Debug.Log("Vitory");
+            Passarfase();
+        }
 
+        
     }
 
     public void Cliques()
     {
-        valorCliques++;
-        textoCliques.text = valorCliques.ToString();
+        energiaAtual += valorPorClique;
+        textoCliques.text = energiaAtual.ToString();
 
     }
 
-    private void DisplayTime(float timeToDisplay)
+    public void Passarfase()
     {
-        if (timeToDisplay < 0f)
-        {
-            timeToDisplay = 0f;
-        }
-
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
-        float seconds = Mathf.FloorToInt(timeToDisplay % 60);
-        
+        acabou = true;
+        PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
     }
+
+    
+   
 }
