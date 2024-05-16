@@ -11,22 +11,22 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public EcoEnum.Meta metaBaseAtual;
+    
     private int anoAtual;
     public int valorPorClique = 1;
     public int energiaAtual = 0;
+    public int metaAtual;
+    
     public TextMeshProUGUI textoCliques;
-
     public TextMeshProUGUI textoTimer;
-
     public TextMeshProUGUI textoAno;
+    public TextMeshProUGUI textoMeta;
 
     public float tempoTotal = 70;
     public float tempoAtual;
   
     private TimeSpan cronometro;
     
-    public int metaAtual;
-
     public bool acabou = false;
     
     
@@ -36,8 +36,8 @@ public class GameManager : MonoBehaviour
         ChecarFase();
         tempoAtual = tempoTotal;
         metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
-       
-        
+        textoMeta.text = metaAtual.ToString();
+            
         Debug.Log("ano atual: "+ (PlayerPrefs.GetInt("ANOATUAL",2026))); 
         Debug.Log("deficit do ano anterior: "+PlayerPrefs.GetInt("DEFICITMETA",0)); 
     }
