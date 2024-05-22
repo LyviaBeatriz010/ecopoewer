@@ -8,4 +8,18 @@ public class EcoEnum
           Ano2029 = 30,
           Ano2030 = 40
       }
+
+      public enum TipoProducao
+      {
+          Solar,
+          Eolica, 
+          Hidreletrica,
+          Biomassa,
+          Geotermica,
+          DasOndas,
+          Mares,
+          TermicaDosOceanos,
+          Biógas,
+          DoHidrogenio
+      }
 }

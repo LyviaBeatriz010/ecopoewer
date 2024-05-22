@@ -16,11 +16,13 @@ public class GameManager : MonoBehaviour
     public int valorPorClique = 1;
     public int energiaAtual = 0;
     public int metaAtual;
+    public int dinheiroAtual;
     
-    public TextMeshProUGUI textoCliques;
+    [FormerlySerializedAs("textoCliques")] public TextMeshProUGUI textoEnergiaAtual;
     public TextMeshProUGUI textoTimer;
     public TextMeshProUGUI textoAno;
     public TextMeshProUGUI textoMeta;
+    public TextMeshProUGUI textoDinheiro;
 
     public float tempoTotal = 70;
     public float tempoAtual;
@@ -29,8 +31,8 @@ public class GameManager : MonoBehaviour
     
     public bool acabou = false;
     
+    //public string[] usinas;
     
-   
     void Start()
     {
         ChecarFase();
@@ -127,8 +129,7 @@ public class GameManager : MonoBehaviour
     public void Cliques()
     {
         energiaAtual += valorPorClique;
-        textoCliques.text = energiaAtual.ToString();
-
+        textoEnergiaAtual.text = energiaAtual.ToString();
     }
 
     public void Passarfase()
@@ -137,6 +138,14 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
     }
 
+    public void VenderEnergia()
+    {
+        dinheiroAtual += energiaAtual;
+        energiaAtual = 0;
+        
+        textoEnergiaAtual.text = energiaAtual.ToString();
+        textoDinheiro.text = dinheiroAtual.ToString();
+    }
+
     
-   
 }
