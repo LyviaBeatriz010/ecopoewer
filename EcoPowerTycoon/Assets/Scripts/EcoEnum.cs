@@ -1,8 +1,9 @@
 public class EcoEnum
 {
+    
    public enum Meta
       {
-          Ano2026 = 10,
+          Ano2026 = 200,
           Ano2027 = 15,
           Ano2028 = 20,
           Ano2029 = 30,
@@ -16,10 +17,10 @@ public class EcoEnum
           Hidreletrica,
           Biomassa,
           Geotermica,
-          DasOndas,
+          Ondas,
           Mares,
           TermicaDosOceanos,
           Biógas,
-          DoHidrogenio
+          Hidrogenio
       }
 }

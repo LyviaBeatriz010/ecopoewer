@@ -1,18 +1,70 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using TMPro.SpriteAssetUtilities;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Usina : MonoBehaviour
-{ 
+{
+   public string tituloBotao;
+   
    public EcoEnum.TipoProducao tipodeProducao;
-   public int preco;
-   public int producao;
-   public int quantidadeEmpresas;
-   public bool vendido;
+   public int precoDaUsina;
+   public int producaoPorSegundo;
+   public int quantidadeUsinas;
 
-   public void UpdateUsinas()
+   public TextMeshProUGUI textoQuantidadeDeUsinas;
+   public TextMeshProUGUI textoTipoProducao;
+   public TextMeshProUGUI textoPrecoUsina;
+   public TextMeshProUGUI textoProducaoPorSegundo;
+
+   public bool produzindo = false;
+   void Start()
    {
-      quantidadeEmpresas += 1;
+      textoTipoProducao.text = tituloBotao;
+      textoPrecoUsina.text = precoDaUsina.ToString();
+      textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
+   }
+
+   public void ComprarUsina()
+   {
+      if (GameManager.instance.FazerCompra(precoDaUsina))
+      {
+         //compra deu certo
+         quantidadeUsinas += 1;
+         textoQuantidadeDeUsinas.text = quantidadeUsinas.ToString();
+         //chamada de audio de sucesso
+      }
+      else
+      {
+         //compra deu errado
+         //chamada de audio de fracasso
+      }
+      
+      //verificar se foi o primeiro
+      //chamar a corotina aqui
+      
+      if (quantidadeUsinas == 1)
+      {
+         produzindo = true;
+         
+         StartCoroutine(ProduzindoEnergia());
+      }
+   }
+
+   IEnumerator ProduzindoEnergia()
+   {
+      while (produzindo)
+      {
+         GameManager.instance.energiaAtual += (producaoPorSegundo * quantidadeUsinas);
+         GameManager.instance.textoEnergiaAtual.text = GameManager.instance.energiaAtual.ToString();
+      
+         yield return new WaitForSeconds(1.0f);  
+      }
+
+      StopCoroutine(ProduzindoEnergia());
    }
 }

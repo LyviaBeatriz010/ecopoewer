@@ -871,7 +871,7 @@ GameObject:
   - component: {fileID: 261654688}
   - component: {fileID: 261654687}
   m_Layer: 5
-  m_Name: IconeFundo
+  m_Name: Fundo do icone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3537,7 +3537,7 @@ MonoBehaviour:
   textoAno: {fileID: 630745602}
   textoMeta: {fileID: 1589206908}
   textoDinheiro: {fileID: 738999930}
-  tempoTotal: 5
+  tempoTotal: 300
   tempoAtual: 0
   acabou: 0
 --- !u!4 &1005857559
@@ -3783,7 +3783,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10 GW/s
+  m_text: 0 GW/s
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4728,7 +4728,7 @@ GameObject:
   - component: {fileID: 1474340895}
   - component: {fileID: 1474340894}
   m_Layer: 5
-  m_Name: TipoEnergia
+  m_Name: Tipo de energia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4773,7 +4773,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Energia Solar
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5077,7 +5077,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1.000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6033,7 +6033,7 @@ GameObject:
   - component: {fileID: 1763444088}
   - component: {fileID: 1763444087}
   m_Layer: 5
-  m_Name: CentroBotao
+  m_Name: Fundo do centro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6792,7 +6792,7 @@ GameObject:
   - component: {fileID: 2021298021}
   - component: {fileID: 2021298024}
   m_Layer: 5
-  m_Name: (Button) Usina1
+  m_Name: (Button) Usina 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6870,9 +6870,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2021298024}
         m_TargetAssemblyTypeName: Usina, Assembly-CSharp
-        m_MethodName: UpdateUsinas
+        m_MethodName: ComprarUsina
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6932,11 +6932,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tituloBotao: Energia Solar
   tipodeProducao: 0
-  preco: 0
-  producao: 0
-  quantidadeEmpresas: 0
-  vendido: 0
+  precoDaUsina: 10
+  producaoPorSegundo: 5
+  quantidadeUsinas: 0
+  textoQuantidadeDeUsinas: {fileID: 352235921}
+  textoTipoProducao: {fileID: 1474340894}
+  textoPrecoUsina: {fileID: 1608178887}
+  textoProducaoPorSegundo: {fileID: 1053388892}
+  produzindo: 0
 --- !u!1 &2030141600
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,7 +6954,7 @@ GameObject:
   - component: {fileID: 2030141603}
   - component: {fileID: 2030141602}
   m_Layer: 5
-  m_Name: Icone Producao
+  m_Name: Icone de producao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

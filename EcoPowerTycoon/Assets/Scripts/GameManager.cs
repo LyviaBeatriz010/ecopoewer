@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager instance;
+    
     public EcoEnum.Meta metaBaseAtual;
     
     private int anoAtual;
@@ -18,7 +20,7 @@ public class GameManager : MonoBehaviour
     public int metaAtual;
     public int dinheiroAtual;
     
-    [FormerlySerializedAs("textoCliques")] public TextMeshProUGUI textoEnergiaAtual;
+    public TextMeshProUGUI textoEnergiaAtual;
     public TextMeshProUGUI textoTimer;
     public TextMeshProUGUI textoAno;
     public TextMeshProUGUI textoMeta;
@@ -32,6 +34,11 @@ public class GameManager : MonoBehaviour
     public bool acabou = false;
     
     //public string[] usinas;
+
+    void Awake()
+    {
+        instance = this;
+    }
     
     void Start()
     {
@@ -147,5 +154,25 @@ public class GameManager : MonoBehaviour
         textoDinheiro.text = dinheiroAtual.ToString();
     }
 
-    
+    public bool FazerCompra(int preco)
+    {
+        bool sucesso = false;
+        
+        if (dinheiroAtual >= preco)
+        {
+            sucesso = true;
+            dinheiroAtual -= preco;
+            //atualiza interface
+            textoDinheiro.text = dinheiroAtual.ToString();
+        }
+
+        return sucesso;
+    }
+
+    /*
+    public bool GastarPontosPesquisa()
+    {
+        
+    }
+    */
 }
