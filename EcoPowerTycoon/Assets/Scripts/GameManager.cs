@@ -17,10 +17,12 @@ public class GameManager : MonoBehaviour
     private int anoAtual;
     public int valorPorClique = 1;
     public int energiaAtual = 0;
+    public int pontosPesquisaAtual = 0;
     public int metaAtual;
     public int dinheiroAtual;
     
     public TextMeshProUGUI textoEnergiaAtual;
+    public TextMeshProUGUI textoPontosPesquisaAtual;
     public TextMeshProUGUI textoTimer;
     public TextMeshProUGUI textoAno;
     public TextMeshProUGUI textoMeta;
@@ -169,6 +171,7 @@ public class GameManager : MonoBehaviour
         return sucesso;
     }
 
+    
     /*
     public bool GastarPontosPesquisa()
     {

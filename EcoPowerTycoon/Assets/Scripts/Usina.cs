@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using TMPro;
 using TMPro.SpriteAssetUtilities;
 using Unity.VisualScripting;
+using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
 
 public class Usina : MonoBehaviour
 {
@@ -20,6 +24,8 @@ public class Usina : MonoBehaviour
    public TextMeshProUGUI textoTipoProducao;
    public TextMeshProUGUI textoPrecoUsina;
    public TextMeshProUGUI textoProducaoPorSegundo;
+
+   public Button botaoDaUsina;
 
    public bool produzindo = false;
    void Start()
@@ -66,5 +72,10 @@ public class Usina : MonoBehaviour
       }
 
       StopCoroutine(ProduzindoEnergia());
+   }
+
+   public void DesbloquearUsina()
+   {
+      botaoDaUsina.interactable = true;
    }
 }

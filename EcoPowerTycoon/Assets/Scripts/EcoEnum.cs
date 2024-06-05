@@ -23,4 +23,18 @@ public class EcoEnum
           Biógas,
           Hidrogenio
       }
+
+      public enum TipoCentro
+      {
+          Centro1,
+          Centro2,
+          Centro3,
+          Centro4,
+          Centro5,
+          Centro6,
+          Centro7,
+          Centro8,
+          Centro9,
+          Centro10
+      }
 }
