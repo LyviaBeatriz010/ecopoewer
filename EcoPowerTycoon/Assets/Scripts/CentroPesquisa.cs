@@ -6,6 +6,7 @@ using TMPro.SpriteAssetUtilities;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class CentroPesquisa : MonoBehaviour
 {
@@ -15,11 +16,16 @@ public class CentroPesquisa : MonoBehaviour
    public int precoDoCentro;
    public int pontosPorSegundo;
    public int quantidadeCentros;
+   public int valorParaDesbloquearCentro;
 
    public TextMeshProUGUI textoQuantidadeDeCentros;
    public TextMeshProUGUI textoTipoCentro;
    public TextMeshProUGUI textoPrecoCentro;
    public TextMeshProUGUI textoPontosPorSegundo;
+   public TextMeshProUGUI textoPrecoDeDesbloqueioCentroPesquisa;
+
+   public Button botaoDoCentroDePesquisa;
+   public GameObject botaoParaDesbloquearCentroPesquisa;
 
    public bool produzindoPontos = false;
    void Start()
@@ -27,6 +33,7 @@ public class CentroPesquisa : MonoBehaviour
       textoTipoCentro.text = tituloBotao;
       textoPrecoCentro.text = precoDoCentro.ToString();
       textoPontosPorSegundo.text = pontosPorSegundo + " GW/s";
+      textoPrecoDeDesbloqueioCentroPesquisa.text = valorParaDesbloquearCentro.ToString();
    }
 
    public void ComprarCentro()
@@ -67,4 +74,18 @@ public class CentroPesquisa : MonoBehaviour
 
       StopCoroutine(ProduzindoPontos());
    }    
+
+   public void DesbloquearCentro()
+   {
+      if(GameManager.instance.FazerCompra(valorParaDesbloquearCentro))
+      {
+         botaoDoCentroDePesquisa.interactable = true;
+         botaoParaDesbloquearCentroPesquisa.SetActive(false);
+      }
+      else
+      {
+         //compra deu errado
+         //chamada de audio de fracasso
+      }
+   }
 }
