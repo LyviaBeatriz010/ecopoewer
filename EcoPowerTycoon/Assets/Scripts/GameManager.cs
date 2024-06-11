@@ -170,12 +170,18 @@ public class GameManager : MonoBehaviour
 
         return sucesso;
     }
-
-    
-    /*
-    public bool GastarPontosPesquisa()
+    public bool GastarPontosPesquisa(int precoEmPontos)
     {
-        
+        bool sucesso = false;
+
+        if (pontosPesquisaAtual >= precoEmPontos)
+        {
+            sucesso = true;
+            pontosPesquisaAtual -= precoEmPontos;
+            //atualiza interface
+            textoPontosPesquisaAtual.text = pontosPesquisaAtual.ToString();
+        }
+
+        return sucesso;
     }
-    */
 }

@@ -17,6 +17,7 @@ public class Usina : MonoBehaviour
    
    public EcoEnum.TipoProducao tipodeProducao;
    public int precoDaUsina;
+   public int precoDeDesbloqueio;
    public int producaoPorSegundo;
    public int quantidadeUsinas;
 
@@ -24,8 +25,10 @@ public class Usina : MonoBehaviour
    public TextMeshProUGUI textoTipoProducao;
    public TextMeshProUGUI textoPrecoUsina;
    public TextMeshProUGUI textoProducaoPorSegundo;
+   public TextMeshProUGUI textoPrecoDeDesbloqueio;
 
    public Button botaoDaUsina;
+   public GameObject botaoParaDesbloquear;
 
    public bool produzindo = false;
    void Start()
@@ -33,6 +36,7 @@ public class Usina : MonoBehaviour
       textoTipoProducao.text = tituloBotao;
       textoPrecoUsina.text = precoDaUsina.ToString();
       textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
+      textoPrecoDeDesbloqueio.text = precoDeDesbloqueio + " Pontos";
    }
 
    public void ComprarUsina()
@@ -76,6 +80,15 @@ public class Usina : MonoBehaviour
 
    public void DesbloquearUsina()
    {
-      botaoDaUsina.interactable = true;
+      if (GameManager.instance.GastarPontosPesquisa(precoDeDesbloqueio))
+      {
+         botaoDaUsina.interactable = true;
+         botaoParaDesbloquear.SetActive(false);
+      }
+      else
+      {
+         //compra deu errado
+         //chamada de audio de fracasso
+      }  
    }
 }
