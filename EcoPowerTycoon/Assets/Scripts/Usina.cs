@@ -91,4 +91,9 @@ public class Usina : MonoBehaviour
          //chamada de audio de fracasso
       }  
    }
+
+   public void AtualizarProducaoPorSegundo()
+   {
+       textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
+   }
 }
