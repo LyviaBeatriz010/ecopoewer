@@ -13,8 +13,6 @@ using Button = UnityEngine.UI.Button;
 
 public class Usina : MonoBehaviour
 {
-   public string tituloBotao;
-   
    public EcoEnum.TipoProducao tipodeProducao;
    public int precoDaUsina;
    public int precoDeDesbloqueio;
@@ -22,7 +20,6 @@ public class Usina : MonoBehaviour
    public int quantidadeUsinas;
 
    public TextMeshProUGUI textoQuantidadeDeUsinas;
-   public TextMeshProUGUI textoTipoProducao;
    public TextMeshProUGUI textoPrecoUsina;
    public TextMeshProUGUI textoProducaoPorSegundo;
    public TextMeshProUGUI textoPrecoDeDesbloqueio;
@@ -33,7 +30,6 @@ public class Usina : MonoBehaviour
    public bool produzindo = false;
    void Start()
    {
-      textoTipoProducao.text = tituloBotao;
       textoPrecoUsina.text = precoDaUsina.ToString();
       textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
       textoPrecoDeDesbloqueio.text = precoDeDesbloqueio + " Pontos";
@@ -46,6 +42,8 @@ public class Usina : MonoBehaviour
          //compra deu certo
          quantidadeUsinas += 1;
          textoQuantidadeDeUsinas.text = quantidadeUsinas.ToString();
+         precoDaUsina = precoDaUsina * 2;
+         textoPrecoUsina.text = precoDaUsina.ToString();
          //chamada de audio de sucesso
       }
       else

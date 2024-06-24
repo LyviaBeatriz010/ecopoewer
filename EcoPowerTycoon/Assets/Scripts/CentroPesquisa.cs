@@ -10,8 +10,7 @@ using UnityEngine.UI;
 
 public class CentroPesquisa : MonoBehaviour
 {
-   public string tituloBotao;
-   
+  
    public EcoEnum.TipoCentro tipodeCentro;
    public int precoDoCentro;
    public int pontosPorSegundo;
@@ -19,7 +18,6 @@ public class CentroPesquisa : MonoBehaviour
    public int valorParaDesbloquearCentro;
 
    public TextMeshProUGUI textoQuantidadeDeCentros;
-   public TextMeshProUGUI textoTipoCentro;
    public TextMeshProUGUI textoPrecoCentro;
    public TextMeshProUGUI textoPontosPorSegundo;
    public TextMeshProUGUI textoPrecoDeDesbloqueioCentroPesquisa;
@@ -30,7 +28,6 @@ public class CentroPesquisa : MonoBehaviour
    public bool produzindoPontos = false;
    void Start()
    {
-      textoTipoCentro.text = tituloBotao;
       textoPrecoCentro.text = precoDoCentro.ToString();
       textoPontosPorSegundo.text = pontosPorSegundo + " GW/s";
       textoPrecoDeDesbloqueioCentroPesquisa.text = valorParaDesbloquearCentro.ToString();
@@ -43,6 +40,8 @@ public class CentroPesquisa : MonoBehaviour
          //compra deu certo
          quantidadeCentros += 1;
          textoQuantidadeDeCentros.text = quantidadeCentros.ToString();
+         precoDoCentro = precoDoCentro * 2;
+         textoPrecoCentro.text = precoDoCentro.ToString();
          //chamada de audio de sucesso
       }
       else
