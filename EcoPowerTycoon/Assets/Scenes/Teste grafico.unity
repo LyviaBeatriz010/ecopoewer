@@ -600,7 +600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 260.88, y: -139.35}
+  m_AnchoredPosition: {x: 260.88, y: -139.35002}
   m_SizeDelta: {x: -521.77, y: -278.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198845155
@@ -1204,7 +1204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -260.12, y: 0}
+  m_AnchoredPosition: {x: -260.11996, y: 0}
   m_SizeDelta: {x: -520.23, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444784161
@@ -3454,12 +3454,20 @@ MonoBehaviour:
   metaBaseAtual: 0
   valorPorClique: 1
   energiaAtual: 0
-  textoCliques: {fileID: 1407895382}
+  pontosPesquisaAtual: 0
+  metaAtual: 0
+  dinheiroAtual: 0
+  deficitMeta: 0
+  textoEnergiaAtual: {fileID: 0}
+  textoPontosPesquisaAtual: {fileID: 0}
   textoTimer: {fileID: 743685859}
   textoAno: {fileID: 630745602}
+  textoMeta: {fileID: 0}
+  textoDinheiro: {fileID: 0}
+  painelDaVitoria: {fileID: 0}
+  painelDaDerrota: {fileID: 0}
   tempoTotal: 5
   tempoAtual: 0
-  metaAtual: 0
   acabou: 0
 --- !u!4 &1005857559
 Transform:
@@ -5375,7 +5383,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1709602569
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5420,7 +5428,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.261
+  m_FillAmount: 0.318
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -5938,7 +5946,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1923424740
 RectTransform:
   m_ObjectHideFlags: 0

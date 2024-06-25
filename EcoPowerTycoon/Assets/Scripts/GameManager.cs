@@ -14,12 +14,13 @@ public class GameManager : MonoBehaviour
     
     public EcoEnum.Meta metaBaseAtual;
     
-    private int anoAtual;
+    private int anoAtual = 2026;
     public int valorPorClique = 1;
     public int energiaAtual = 0;
     public int pontosPesquisaAtual = 0;
     public int metaAtual;
     public int dinheiroAtual;
+    public int deficitMeta;
     
     public TextMeshProUGUI textoEnergiaAtual;
     public TextMeshProUGUI textoPontosPesquisaAtual;
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject painelDaVitoria;
     public GameObject painelDaDerrota;
+    public GameObject painelDeInformacoes;
 
     public float tempoTotal;
     public float tempoAtual;
@@ -47,9 +49,15 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        Inicializar();
+    }
+
+    public void Inicializar()
+    {
         ChecarFase();
         tempoAtual = tempoTotal;
-        metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
+        metaAtual = (int)metaBaseAtual + deficitMeta;
+        //metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
         textoMeta.text = metaAtual.ToString();
     }
 
@@ -57,7 +65,7 @@ public class GameManager : MonoBehaviour
     {
         // Esse metodo serve para checar em qual fase (ano atual) o jogador está.
         
-        anoAtual = PlayerPrefs.GetInt("ANOATUAL", 2026);
+       // anoAtual = PlayerPrefs.GetInt("ANOATUAL", 2026);
 
         textoAno.text = anoAtual.ToString();
 
@@ -98,8 +106,8 @@ public class GameManager : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.Space))
             {
-                Passarfase();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                //Passarfase();
+                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
     }
@@ -122,9 +130,12 @@ public class GameManager : MonoBehaviour
             
             if (energiaAtual < metaAtual)
             {
-                PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
+                //PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
+                deficitMeta = metaAtual - energiaAtual;
                 painelDaDerrota.SetActive(true);
                 acabou = true;
+                
+                // Acabou o tempo sem bater a meta
             }
         }
         
@@ -139,6 +150,8 @@ public class GameManager : MonoBehaviour
         {
             painelDaVitoria.SetActive(true);
             acabou = true;
+            
+            // Acabou batendo a meta
         }
     }
 
@@ -151,11 +164,14 @@ public class GameManager : MonoBehaviour
     }
 
     public void Passarfase()
-    {
-        acabou = true;
+    { 
+        acabou = false;
         painelDaVitoria.SetActive(false);
         painelDaDerrota.SetActive(false);
-        PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
+        // PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
+        anoAtual++;
+        Inicializar();
+        VenderEnergia();
     }
 
     public void VenderEnergia()
@@ -194,5 +210,15 @@ public class GameManager : MonoBehaviour
         }
 
         return sucesso;
+    }
+
+    public void AtivarInformacoes()
+    {
+        painelDeInformacoes.SetActive(true);
+    }
+
+    public void DesativarInformacoes()
+    {
+        painelDeInformacoes.SetActive(false);
     }
 }
