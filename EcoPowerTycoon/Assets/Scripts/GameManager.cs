@@ -28,7 +28,10 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoMeta;
     public TextMeshProUGUI textoDinheiro;
 
-    public float tempoTotal = 70;
+    public GameObject painelDaVitoria;
+    public GameObject painelDaDerrota;
+
+    public float tempoTotal;
     public float tempoAtual;
   
     private TimeSpan cronometro;
@@ -48,13 +51,11 @@ public class GameManager : MonoBehaviour
         tempoAtual = tempoTotal;
         metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
         textoMeta.text = metaAtual.ToString();
-            
-        Debug.Log("ano atual: "+ (PlayerPrefs.GetInt("ANOATUAL",2026))); 
-        Debug.Log("deficit do ano anterior: "+PlayerPrefs.GetInt("DEFICITMETA",0)); 
     }
 
     public void ChecarFase()
     {
+        // Esse metodo serve para checar em qual fase (ano atual) o jogador está.
         
         anoAtual = PlayerPrefs.GetInt("ANOATUAL", 2026);
 
@@ -80,33 +81,41 @@ public class GameManager : MonoBehaviour
             default:
                 break;
         }
-
-        
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
+        // Conferindo se o tempo da fase não acabou
+        
         if (!acabou)
         {
             FaseRodando();
         }
+        
+        // Se o tempo acabar e o jogador não tiver atingido a meta acontece isso (tela de derrota):
+        
         else
         {
             if (Input.GetKey(KeyCode.Space))
             {
+                Passarfase();
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
         }
-        
     }
 
     public void FaseRodando()
     {
+        // Faz o cronometro funcionar
+        
         if (tempoAtual > 0)
         {
             tempoAtual -= Time.deltaTime;
         }
+        
+        // Indentifica se o cronometro chegou a zero
+        // Indentifica quanto vai ser somado a meta do ano seguinte
+        
         else
         {
             tempoAtual = 0;
@@ -114,29 +123,29 @@ public class GameManager : MonoBehaviour
             if (energiaAtual < metaAtual)
             {
                 PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
-                Debug.Log("GamerOver");
-                Passarfase();
+                painelDaDerrota.SetActive(true);
+                acabou = true;
             }
         }
         
+        // Definindo o tempo do cronometro:
         
         cronometro = TimeSpan.FromSeconds(tempoAtual);
         textoTimer.text = cronometro.ToString(@"mm\:ss");
-
-        // Cliques();
        
-        // vitory
+        // Confere se o jogador concluiu a meta e chama a vitoria
+        
         if (tempoAtual > 0 && energiaAtual >= metaAtual)
         {
-            Debug.Log("Vitory");
-            Passarfase();
+            painelDaVitoria.SetActive(true);
+            acabou = true;
         }
-
-        
     }
 
     public void Cliques()
     {
+        // Faz os cliques no painel piezoeletrico adicionarem pontos a energia atual
+        
         energiaAtual += valorPorClique;
         textoEnergiaAtual.text = energiaAtual.ToString();
     }
@@ -144,6 +153,8 @@ public class GameManager : MonoBehaviour
     public void Passarfase()
     {
         acabou = true;
+        painelDaVitoria.SetActive(false);
+        painelDaDerrota.SetActive(false);
         PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
     }
 
