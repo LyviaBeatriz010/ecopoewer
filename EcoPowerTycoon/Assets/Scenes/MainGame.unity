@@ -10798,7 +10798,7 @@ MonoBehaviour:
   painelDeVitoria: {fileID: 743659757}
   painelDeDerrota: {fileID: 314026437}
   painelDeInformacoes: {fileID: 743518137}
-  tempoTotal: 6
+  tempoTotal: 300
   tempoAtual: 0
   somCliqueNoPainelPiezo: {fileID: 8300000, guid: 8821c52b6500ee940aafcfa493c9e4b3, type: 3}
   somVenderEnergia: {fileID: 8300000, guid: f132d7b55ec800e42b6ecdb7b100720a, type: 3}
