@@ -29,16 +29,24 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoMeta;
     public TextMeshProUGUI textoDinheiro;
 
-    public GameObject painelDaVitoria;
-    public GameObject painelDaDerrota;
+    public GameObject painelDeMetaConcluida;
+    public GameObject painelDeMetaNaoConcluida;
+    public GameObject painelDeVitoria;
+    public GameObject painelDeDerrota;
     public GameObject painelDeInformacoes;
 
     public float tempoTotal;
     public float tempoAtual;
   
     private TimeSpan cronometro;
+
+    private AudioSource aud;
+
+    public AudioClip somCliqueNoPainelPiezo;
+    public AudioClip somVenderEnergia;
     
     public bool acabou = false;
+    public bool anoFinal = false;
     
     //public string[] usinas;
 
@@ -49,6 +57,7 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        aud = GetComponent<AudioSource>();
         Inicializar();
     }
 
@@ -128,11 +137,11 @@ public class GameManager : MonoBehaviour
         {
             tempoAtual = 0;
             
-            if (energiaAtual < metaAtual)
+            if (energiaAtual < metaAtual && !anoFinal)
             {
                 //PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
                 deficitMeta = metaAtual - energiaAtual;
-                painelDaDerrota.SetActive(true);
+                painelDeMetaNaoConcluida.SetActive(true);
                 acabou = true;
                 
                 // Acabou o tempo sem bater a meta
@@ -146,19 +155,39 @@ public class GameManager : MonoBehaviour
        
         // Confere se o jogador concluiu a meta e chama a vitoria
         
-        if (tempoAtual > 0 && energiaAtual >= metaAtual)
+        if (tempoAtual > 0 && energiaAtual >= metaAtual && !anoFinal)
         {
-            painelDaVitoria.SetActive(true);
+            painelDeMetaConcluida.SetActive(true);
             acabou = true;
             
             // Acabou batendo a meta
+        }
+
+
+        if (anoAtual == 2030)
+        {
+            anoFinal = true;
+
+            // Verificando se perdeu
+
+            if (tempoAtual <= 0 && energiaAtual < metaAtual)
+            {
+                painelDeDerrota.SetActive(true);
+            }
+
+            else if (tempoAtual > 0 && energiaAtual >= metaAtual)
+            {
+                painelDeVitoria.SetActive(true);
+            }
         }
     }
 
     public void Cliques()
     {
         // Faz os cliques no painel piezoeletrico adicionarem pontos a energia atual
-        
+
+        aud.volume = 0.2f;
+        aud.PlayOneShot(somCliqueNoPainelPiezo);
         energiaAtual += valorPorClique;
         textoEnergiaAtual.text = energiaAtual.ToString();
     }
@@ -166,8 +195,8 @@ public class GameManager : MonoBehaviour
     public void Passarfase()
     { 
         acabou = false;
-        painelDaVitoria.SetActive(false);
-        painelDaDerrota.SetActive(false);
+        painelDeMetaConcluida.SetActive(false);
+        painelDeMetaNaoConcluida.SetActive(false);
         // PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
         anoAtual++;
         Inicializar();
@@ -176,11 +205,17 @@ public class GameManager : MonoBehaviour
 
     public void VenderEnergia()
     {
-        dinheiroAtual += energiaAtual;
-        energiaAtual = 0;
-        
-        textoEnergiaAtual.text = energiaAtual.ToString();
-        textoDinheiro.text = dinheiroAtual.ToString();
+        if (energiaAtual > 0)
+        {
+            aud.volume = 0.6f;
+            aud.PlayOneShot(somVenderEnergia);
+
+            dinheiroAtual += energiaAtual;
+            energiaAtual = 0;
+
+            textoEnergiaAtual.text = energiaAtual.ToString();
+            textoDinheiro.text = dinheiroAtual.ToString();
+        }
     }
 
     public bool FazerCompra(int preco)
