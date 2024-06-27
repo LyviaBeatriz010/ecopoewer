@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public int metaAtual;
     public int dinheiroAtual;
     public int deficitMeta;
+    public int distribuicaoAtual;
     
     public TextMeshProUGUI textoEnergiaAtual;
     public TextMeshProUGUI textoPontosPesquisaAtual;
@@ -67,7 +68,7 @@ public class GameManager : MonoBehaviour
         tempoAtual = tempoTotal;
         metaAtual = (int)metaBaseAtual + deficitMeta;
         //metaAtual = (int) metaBaseAtual + PlayerPrefs.GetInt("DEFICITMETA",0);
-        textoMeta.text = metaAtual.ToString();
+        textoMeta.text = distribuicaoAtual + "/" + metaAtual;
     }
 
     public void ChecarFase()
@@ -107,17 +108,14 @@ public class GameManager : MonoBehaviour
         if (!acabou)
         {
             FaseRodando();
+            textoMeta.text = distribuicaoAtual + "/" + metaAtual;
         }
         
         // Se o tempo acabar e o jogador não tiver atingido a meta acontece isso (tela de derrota):
         
         else
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                //Passarfase();
-                //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
+            distribuicaoAtual = 0;
         }
     }
 
@@ -137,10 +135,10 @@ public class GameManager : MonoBehaviour
         {
             tempoAtual = 0;
             
-            if (energiaAtual < metaAtual && !anoFinal)
+            if (distribuicaoAtual < metaAtual && !anoFinal)
             {
                 //PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
-                deficitMeta = metaAtual - energiaAtual;
+                deficitMeta = metaAtual - distribuicaoAtual;
                 painelDeMetaNaoConcluida.SetActive(true);
                 acabou = true;
                 
@@ -155,7 +153,7 @@ public class GameManager : MonoBehaviour
        
         // Confere se o jogador concluiu a meta e chama a vitoria
         
-        if (tempoAtual > 0 && energiaAtual >= metaAtual && !anoFinal)
+        if (tempoAtual > 0 && distribuicaoAtual >= metaAtual && !anoFinal)
         {
             painelDeMetaConcluida.SetActive(true);
             acabou = true;
@@ -186,8 +184,8 @@ public class GameManager : MonoBehaviour
     {
         // Faz os cliques no painel piezoeletrico adicionarem pontos a energia atual
 
-        aud.volume = 0.2f;
-        aud.PlayOneShot(somCliqueNoPainelPiezo);
+        //aud.volume = 0.2f;
+        aud.PlayOneShot(somCliqueNoPainelPiezo,0.2f);
         energiaAtual += valorPorClique;
         textoEnergiaAtual.text = energiaAtual.ToString();
     }
@@ -211,10 +209,13 @@ public class GameManager : MonoBehaviour
             aud.PlayOneShot(somVenderEnergia);
 
             dinheiroAtual += energiaAtual;
+            distribuicaoAtual += energiaAtual;
             energiaAtual = 0;
 
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
+            
+            ControlarGrafico.instance.AtualizarGrafico();
         }
     }
 
