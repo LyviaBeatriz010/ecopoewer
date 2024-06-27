@@ -32,7 +32,7 @@ public class Usina : MonoBehaviour
    {
       textoPrecoUsina.text = precoDaUsina.ToString();
       textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
-      textoPrecoDeDesbloqueio.text = precoDeDesbloqueio + " Pontos";
+      textoPrecoDeDesbloqueio.text = precoDeDesbloqueio.ToString();
    }
 
    public void ComprarUsina()
@@ -54,13 +54,6 @@ public class Usina : MonoBehaviour
       
       //verificar se foi o primeiro
       //chamar a corotina aqui
-      
-      if (quantidadeUsinas == 1)
-      {
-         produzindo = true;
-         
-         StartCoroutine(ProduzindoEnergia());
-      }
    }
 
    IEnumerator ProduzindoEnergia()
@@ -80,8 +73,18 @@ public class Usina : MonoBehaviour
    {
       if (GameManager.instance.GastarPontosPesquisa(precoDeDesbloqueio))
       {
+         quantidadeUsinas += 1;
+         textoQuantidadeDeUsinas.text = quantidadeUsinas.ToString();
+         
          botaoDaUsina.interactable = true;
          botaoParaDesbloquear.SetActive(false);
+         
+         if (quantidadeUsinas == 1)
+         {
+            produzindo = true;
+         
+            StartCoroutine(ProduzindoEnergia());
+         }
       }
       else
       {

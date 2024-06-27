@@ -8,6 +8,8 @@ public class ControlarGrafico : MonoBehaviour
 {
     public static ControlarGrafico instance;
 
+    public float valor;
+
     public Image imagemDoGrafico;
 
     public TextMeshProUGUI textoDaPorcentagem;
@@ -27,7 +29,8 @@ public class ControlarGrafico : MonoBehaviour
 
     public void AtualizarGrafico()
     {
-        float valor = GameManager.instance.distribuicaoAtual / GameManager.instance.metaAtual;
+        valor = (float)GameManager.instance.distribuicaoAtual / GameManager.instance.metaAtual;
+        Debug.Log(valor);
 
         //atualizar a img
 
@@ -37,7 +40,14 @@ public class ControlarGrafico : MonoBehaviour
         //atualizar texto de %
 
         textoDaPorcentagem.text = (valor * 100).ToString("F") + " %";
+    }
 
+    public void ZerarGrafico()
+    {
+        imagemDoGrafico.fillAmount = 0;
+        valor = 0;
+        
+        textoDaPorcentagem.text = (valor * 100).ToString("F") + " %";
     }
     
 }

@@ -52,13 +52,6 @@ public class CentroPesquisa : MonoBehaviour
       
       //verificar se foi o primeiro
       //chamar a corotina aqui
-      
-      if (quantidadeCentros == 1)
-      {
-         produzindoPontos = true;
-         
-         StartCoroutine(ProduzindoPontos());
-      }
    }
 
    IEnumerator ProduzindoPontos()
@@ -78,8 +71,18 @@ public class CentroPesquisa : MonoBehaviour
    {
       if(GameManager.instance.FazerCompra(valorParaDesbloquearCentro))
       {
+         quantidadeCentros += 1;
+         textoQuantidadeDeCentros.text = quantidadeCentros.ToString();
+         
          botaoDoCentroDePesquisa.interactable = true;
          botaoParaDesbloquearCentroPesquisa.SetActive(false);
+         
+         if (quantidadeCentros == 1)
+         {
+            produzindoPontos = true;
+         
+            StartCoroutine(ProduzindoPontos());
+         }
       }
       else
       {

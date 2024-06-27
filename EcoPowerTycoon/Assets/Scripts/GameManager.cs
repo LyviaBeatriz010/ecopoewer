@@ -116,6 +116,7 @@ public class GameManager : MonoBehaviour
         else
         {
             distribuicaoAtual = 0;
+            ControlarGrafico.instance.ZerarGrafico();
         }
     }
 
@@ -188,6 +189,7 @@ public class GameManager : MonoBehaviour
         aud.PlayOneShot(somCliqueNoPainelPiezo,0.2f);
         energiaAtual += valorPorClique;
         textoEnergiaAtual.text = energiaAtual.ToString();
+        
     }
 
     public void Passarfase()
@@ -235,17 +237,17 @@ public class GameManager : MonoBehaviour
     }
     public bool GastarPontosPesquisa(int precoEmPontos)
     {
-        bool sucesso = false;
+        bool sucesso1 = false;
 
         if (pontosPesquisaAtual >= precoEmPontos)
         {
-            sucesso = true;
+            sucesso1 = true;
             pontosPesquisaAtual -= precoEmPontos;
             //atualiza interface
             textoPontosPesquisaAtual.text = pontosPesquisaAtual.ToString();
         }
 
-        return sucesso;
+        return sucesso1;
     }
 
     public void AtivarInformacoes()
