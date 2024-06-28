@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour
     public GameObject painelDeMetaNaoConcluida;
     public GameObject painelDeVitoria;
     public GameObject painelDeDerrota;
-    public GameObject painelDeInformacoes;
+    public GameObject painelDePausa;
 
     public float tempoTotal;
     public float tempoAtual;
@@ -169,12 +169,12 @@ public class GameManager : MonoBehaviour
 
             // Verificando se perdeu
 
-            if (tempoAtual <= 0 && energiaAtual < metaAtual)
+            if (tempoAtual <= 0 && distribuicaoAtual < metaAtual)
             {
                 painelDeDerrota.SetActive(true);
             }
 
-            else if (tempoAtual > 0 && energiaAtual >= metaAtual)
+            else if (tempoAtual > 0 && distribuicaoAtual >= metaAtual)
             {
                 painelDeVitoria.SetActive(true);
             }
@@ -195,9 +195,11 @@ public class GameManager : MonoBehaviour
     public void Passarfase()
     { 
         acabou = false;
+
         painelDeMetaConcluida.SetActive(false);
         painelDeMetaNaoConcluida.SetActive(false);
         // PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
+
         anoAtual++;
         Inicializar();
         VenderEnergia();
@@ -248,15 +250,5 @@ public class GameManager : MonoBehaviour
         }
 
         return sucesso1;
-    }
-
-    public void AtivarInformacoes()
-    {
-        painelDeInformacoes.SetActive(true);
-    }
-
-    public void DesativarInformacoes()
-    {
-        painelDeInformacoes.SetActive(false);
     }
 }

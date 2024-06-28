@@ -9,4 +9,9 @@ public class CarregarCena : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void CarregarMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
