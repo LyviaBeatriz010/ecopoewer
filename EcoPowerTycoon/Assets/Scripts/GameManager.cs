@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     
     public bool acabou = false;
     public bool anoFinal = false;
+    public bool cumpriuMeta = false;
     
     //public string[] usinas;
 
@@ -138,6 +139,7 @@ public class GameManager : MonoBehaviour
             
             if (distribuicaoAtual < metaAtual && !anoFinal)
             {
+                cumpriuMeta = false;
                 //PlayerPrefs.SetInt("DEFICITMETA",metaAtual - energiaAtual);
                 deficitMeta = metaAtual - distribuicaoAtual;
                 painelDeMetaNaoConcluida.SetActive(true);
@@ -156,6 +158,8 @@ public class GameManager : MonoBehaviour
         
         if (tempoAtual > 0 && distribuicaoAtual >= metaAtual && !anoFinal)
         {
+            cumpriuMeta = true;
+
             painelDeMetaConcluida.SetActive(true);
             acabou = true;
             
@@ -202,7 +206,9 @@ public class GameManager : MonoBehaviour
 
         anoAtual++;
         Inicializar();
-        VenderEnergia();
+        VenderEnergiaNoFimDoAno();
+
+        cumpriuMeta = false;
     }
 
     public void VenderEnergia()
@@ -219,6 +225,29 @@ public class GameManager : MonoBehaviour
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
             
+            ControlarGrafico.instance.AtualizarGrafico();
+        }
+    }
+
+    public void VenderEnergiaNoFimDoAno()
+    {
+        if (energiaAtual > 0)
+        {
+            aud.volume = 0.6f;
+            aud.PlayOneShot(somVenderEnergia);
+
+            dinheiroAtual += energiaAtual;
+
+            if (cumpriuMeta)
+            {
+                distribuicaoAtual += energiaAtual;
+            }
+
+            energiaAtual = 0;
+
+            textoEnergiaAtual.text = energiaAtual.ToString();
+            textoDinheiro.text = dinheiroAtual.ToString();
+
             ControlarGrafico.instance.AtualizarGrafico();
         }
     }
