@@ -36,6 +36,8 @@ public class GameManager : MonoBehaviour
     public GameObject painelDeDerrota;
     public GameObject painelDePausa;
 
+    public AudioSource volumeDoLoop;
+    
     public float tempoTotal;
     public float tempoAtual;
   
@@ -45,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public AudioClip somCliqueNoPainelPiezo;
     public AudioClip somVenderEnergia;
+    public AudioClip somGastarPontosPesquisa;
     
     public bool acabou = false;
     public bool anoFinal = false;
@@ -175,11 +178,13 @@ public class GameManager : MonoBehaviour
 
             if (tempoAtual <= 0 && distribuicaoAtual < metaAtual)
             {
+                volumeDoLoop.volume = 0;
                 painelDeDerrota.SetActive(true);
             }
 
             else if (tempoAtual > 0 && distribuicaoAtual >= metaAtual)
             {
+                volumeDoLoop.volume = 0;
                 painelDeVitoria.SetActive(true);
             }
         }
@@ -215,8 +220,7 @@ public class GameManager : MonoBehaviour
     {
         if (energiaAtual > 0)
         {
-            aud.volume = 0.6f;
-            aud.PlayOneShot(somVenderEnergia);
+            aud.PlayOneShot(somVenderEnergia, 0.6f);
 
             dinheiroAtual += energiaAtual;
             distribuicaoAtual += energiaAtual;
@@ -233,8 +237,7 @@ public class GameManager : MonoBehaviour
     {
         if (energiaAtual > 0)
         {
-            aud.volume = 0.6f;
-            aud.PlayOneShot(somVenderEnergia);
+            aud.PlayOneShot(somVenderEnergia, 0.6f);
 
             dinheiroAtual += energiaAtual;
 
@@ -260,6 +263,8 @@ public class GameManager : MonoBehaviour
         {
             sucesso = true;
             dinheiroAtual -= preco;
+
+            aud.PlayOneShot(somVenderEnergia, 0.8f);
             //atualiza interface
             textoDinheiro.text = dinheiroAtual.ToString();
         }
@@ -274,6 +279,7 @@ public class GameManager : MonoBehaviour
         {
             sucesso1 = true;
             pontosPesquisaAtual -= precoEmPontos;
+            aud.PlayOneShot(somGastarPontosPesquisa, 0.8f);
             //atualiza interface
             textoPontosPesquisaAtual.text = pontosPesquisaAtual.ToString();
         }

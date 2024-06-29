@@ -18,8 +18,12 @@ public class Melhorias : MonoBehaviour
 
     public GameObject confirmacaoDeCompra;
 
+    private AudioSource aud;
+
+    public AudioClip somErroAoComprarMelhoria;
     void Start()
     {
+        aud = GetComponent<AudioSource>();
         textoValorDaMelhoria.text = precoDaMelhoria.ToString();
     }
 
@@ -34,6 +38,11 @@ public class Melhorias : MonoBehaviour
             textoMelhoriasCompradas.text = melhoriasCompradas + " / 10";
             botaoDaMelhoria.interactable = false; 
             confirmacaoDeCompra.SetActive(true);
+        }
+        else
+        {
+            //Audio de compra não bem sucedida
+            aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
         }
     }
 }

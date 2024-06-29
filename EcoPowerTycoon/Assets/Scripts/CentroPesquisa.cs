@@ -25,9 +25,15 @@ public class CentroPesquisa : MonoBehaviour
    public Button botaoDoCentroDePesquisa;
    public GameObject botaoParaDesbloquearCentroPesquisa;
 
+   private AudioSource aud;
+    
+   public AudioClip somErroAoComprarCentro;
+   public AudioClip somDeDesbloqueioCentro;
+
    public bool produzindoPontos = false;
    void Start()
    {
+      aud = GetComponent<AudioSource>();
       textoPrecoCentro.text = precoDoCentro.ToString();
       textoPontosPorSegundo.text = pontosPorSegundo + " GW/s";
       textoPrecoDeDesbloqueioCentroPesquisa.text = valorParaDesbloquearCentro.ToString();
@@ -48,6 +54,7 @@ public class CentroPesquisa : MonoBehaviour
       {
          //compra deu errado
          //chamada de audio de fracasso
+         aud.PlayOneShot(somErroAoComprarCentro, 0.2f);
       }
       
       //verificar se foi o primeiro
@@ -74,6 +81,7 @@ public class CentroPesquisa : MonoBehaviour
          quantidadeCentros += 1;
          textoQuantidadeDeCentros.text = quantidadeCentros.ToString();
          
+         aud.PlayOneShot(somDeDesbloqueioCentro, 1f);
          botaoDoCentroDePesquisa.interactable = true;
          botaoParaDesbloquearCentroPesquisa.SetActive(false);
          
@@ -88,6 +96,7 @@ public class CentroPesquisa : MonoBehaviour
       {
          //compra deu errado
          //chamada de audio de fracasso
+         aud.PlayOneShot(somErroAoComprarCentro, 0.2f);
       }
    }
 }
