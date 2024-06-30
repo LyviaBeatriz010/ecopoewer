@@ -318,6 +318,7 @@ MonoBehaviour:
   botaoDoCentroDePesquisa: {fileID: 993451594577166283}
   botaoParaDesbloquearCentroPesquisa: {fileID: 3053328836237526688}
   somErroAoComprarCentro: {fileID: 8300000, guid: 7b4fc41fc617dbe4884966e49675930a, type: 3}
+  somDeDesbloqueioCentro: {fileID: 8300000, guid: cd0169c9664fe3042a0b91239ce48756, type: 3}
   produzindoPontos: 0
 --- !u!82 &3955074942269896265
 AudioSource:

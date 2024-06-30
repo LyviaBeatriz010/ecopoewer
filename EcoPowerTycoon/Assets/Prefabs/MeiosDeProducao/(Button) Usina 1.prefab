@@ -1577,6 +1577,7 @@ MonoBehaviour:
   textoProducaoPorSegundo: {fileID: 788391979496502211}
   textoPrecoDeDesbloqueio: {fileID: 5633345744336869446}
   somErroNaCompra: {fileID: 8300000, guid: 7b4fc41fc617dbe4884966e49675930a, type: 3}
+  somDeDesbloqueioUsina: {fileID: 8300000, guid: cd0169c9664fe3042a0b91239ce48756, type: 3}
   botaoDaUsina: {fileID: 5268326965338346197}
   botaoParaDesbloquear: {fileID: 6315893505500662501}
   produzindo: 0
