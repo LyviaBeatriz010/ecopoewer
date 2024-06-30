@@ -27,7 +27,7 @@ public class ControlarMensagens : MonoBehaviour
     
     public void MensagemDeDesbloqueioUsina()
     {
-        mensagemAleatoria.text = "Uau!! você desbloqueou uma usina, agora você produz 5GWZ/s. Estamos a todo vapor!";
+        mensagemAleatoria.text = "Uau!! Você desbloqueou uma usina. Estamos a todo vapor!";
     }
 
     public void MensagemDesbloqueioCentro()

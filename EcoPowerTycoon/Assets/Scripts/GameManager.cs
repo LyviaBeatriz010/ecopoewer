@@ -241,7 +241,7 @@ public class GameManager : MonoBehaviour
 
             dinheiroAtual += energiaAtual;
 
-            if (cumpriuMeta)
+            if(cumpriuMeta == false)
             {
                 distribuicaoAtual += energiaAtual;
             }

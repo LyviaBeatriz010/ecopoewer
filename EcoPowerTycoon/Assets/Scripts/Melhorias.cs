@@ -31,13 +31,19 @@ public class Melhorias : MonoBehaviour
     {
         if (GameManager.instance.GastarPontosPesquisa(precoDaMelhoria))
         {
+            // Fazendo a melhoria
+
             botaoEnergiaSolar.producaoPorSegundo = botaoEnergiaSolar.producaoPorSegundo * 2;
             botaoEnergiaSolar.AtualizarProducaoPorSegundo();
+
+            // Atualizando a interface
 
             melhoriasCompradas += 1;
             textoMelhoriasCompradas.text = melhoriasCompradas + " / 10";
             botaoDaMelhoria.interactable = false; 
             confirmacaoDeCompra.SetActive(true);
+
+            // Mandando mensagem
 
             ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
         }
