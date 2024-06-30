@@ -9061,17 +9061,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432aab95f670276479729f0258910ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mensagemAtual: {fileID: 860267066}
   mensagemAleatoria: {fileID: 65215622}
   mensagensAleatorias:
   - "Voc\xEA sabia que a energia e\xF3lica \xE9 sustentavel porque ela ultiliza um
     recurso que \xE9 \" +             \"reutilizavel, o vento, mas que as turbinas
     proximas as casas atrapalham a qualidade de vida das pessoas?"
-  - "Voc\xEA sabia que com pontos de pesquisa \xE9 possivel descobrir novos meios
-    de produ\xE7\xE3o e ainda melhora - los ?"
+  - "Voc\xEA sabia que a energia solar \xE9 solar?"
+  - "Voc\xEA sabia que osabi\xE1 sabia assobiar?"
   mensagemInicial: "Oii!! Eu sou o Lithinho mascote dessa iniciativa ecologica da
     uni\xE3o ecotlanta e voc\xEA \xE9 o respons\xE1vel pela secretaria de distribui\xE7\xE3o
     energ\xE9tica do uni\xE3o ecotlanta "
+  sorteando: 0
 --- !u!1 &1124022886
 GameObject:
   m_ObjectHideFlags: 0

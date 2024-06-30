@@ -91,6 +91,8 @@ public class CentroPesquisa : MonoBehaviour
          
             StartCoroutine(ProduzindoPontos());
          }
+
+         ControlarMensagens.instance.MensagemDesbloqueioCentro();
       }
       else
       {

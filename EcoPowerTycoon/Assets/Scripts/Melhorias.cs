@@ -38,6 +38,8 @@ public class Melhorias : MonoBehaviour
             textoMelhoriasCompradas.text = melhoriasCompradas + " / 10";
             botaoDaMelhoria.interactable = false; 
             confirmacaoDeCompra.SetActive(true);
+
+            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
         }
         else
         {
