@@ -122,6 +122,11 @@ public class GameManager : MonoBehaviour
             distribuicaoAtual = 0;
             ControlarGrafico.instance.ZerarGrafico();
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            painelDePausa.SetActive(true);
+        }
     }
 
     public void FaseRodando()
@@ -210,6 +215,7 @@ public class GameManager : MonoBehaviour
         // PlayerPrefs.SetInt("ANOATUAL", anoAtual + 1);
 
         anoAtual++;
+        tempoTotal -= 60;
         Inicializar();
         VenderEnergiaNoFimDoAno();
 
