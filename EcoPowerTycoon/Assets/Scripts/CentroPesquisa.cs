@@ -35,7 +35,7 @@ public class CentroPesquisa : MonoBehaviour
    {
       aud = GetComponent<AudioSource>();
       textoPrecoCentro.text = precoDoCentro.ToString();
-      textoPontosPorSegundo.text = pontosPorSegundo + " GW/s";
+      textoPontosPorSegundo.text = pontosPorSegundo + " Pontos/s";
       textoPrecoDeDesbloqueioCentroPesquisa.text = valorParaDesbloquearCentro.ToString();
    }
 
@@ -100,5 +100,10 @@ public class CentroPesquisa : MonoBehaviour
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroAoComprarCentro, 0.2f);
       }
+   }
+
+   public void AtualizarProducaoEmPesquisa()
+   {
+       textoPontosPorSegundo.text = pontosPorSegundo + " Pontos/s";
    }
 }

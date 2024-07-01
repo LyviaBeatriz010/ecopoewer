@@ -826,7 +826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -164.62, y: 73.184006}
+  m_AnchoredPosition: {x: -164.62, y: 73.18402}
   m_SizeDelta: {x: 352.39, y: 163.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &90479478
@@ -9189,7 +9189,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0/10
+  m_text: 0/8
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10136,8 +10136,8 @@ MonoBehaviour:
     m_Bottom: 0
   m_ChildAlignment: 0
   m_Spacing: 0
-  m_ChildForceExpandWidth: 1
-  m_ChildForceExpandHeight: 1
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
@@ -11641,6 +11641,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3559839209038411000, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
   m_PrefabInstance: {fileID: 1229441183}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1261834149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+  m_PrefabInstance: {fileID: 741210697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f1a13a0680f9934ca8de0ef8cccd473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1284356224
 GameObject:
   m_ObjectHideFlags: 0
@@ -16749,6 +16760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: (Button) Melhoria 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: m_text
+      value: Energia solar mais eficiente
+      objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
@@ -16757,6 +16772,10 @@ PrefabInstance:
       propertyPath: textoMelhoriasCompradas
       value: 
       objectReference: {fileID: 919159784}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: botaoCentroBasicoDePesquisaUm
+      value: 
+      objectReference: {fileID: 1261834149}
     - target: {fileID: 6501923903710901131, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -16837,6 +16856,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8068070439038837132, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8068070439038837132, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 475
+      objectReference: {fileID: 0}
+    - target: {fileID: 8605296005340699007, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 13066e7b41c0d2d4c91a47d168853c6c, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
