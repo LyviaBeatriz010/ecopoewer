@@ -14,4 +14,9 @@ public class CarregarCena : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void CarregarTutorial()
+    {
+        SceneManager.LoadScene(2);
+    }
 }
