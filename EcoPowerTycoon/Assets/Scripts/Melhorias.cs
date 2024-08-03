@@ -10,7 +10,6 @@ public class Melhorias : MonoBehaviour
     public int melhoriasCompradas;
 
     public TextMeshProUGUI textoValorDaMelhoria;
-    public TextMeshProUGUI textoMelhoriasCompradas;
 
     // Usinas para melhorar
 
@@ -51,7 +50,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false; 
             confirmacaoDeCompra.SetActive(true);
 
@@ -80,7 +78,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -108,7 +105,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -136,7 +132,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -164,7 +159,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -192,7 +186,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -219,7 +212,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
@@ -246,7 +238,6 @@ public class Melhorias : MonoBehaviour
             // Atualizando a interface
 
             melhoriasCompradas += 1;
-            textoMelhoriasCompradas.text = melhoriasCompradas + " / 8";
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
