@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GerenciarAbas : MonoBehaviour
 {
     public GameObject painelDeCentrosDePesquisa;
     public GameObject painelDeMeiosdeProducao;
     public GameObject painelDeMelhorias;
+
+    public GameObject botaoQueAtivaPainelCentrosDePesquisa;
+    public GameObject botaoQueAtivaPainelMeiosDeProducao;
+    public GameObject botaoQueAtivaPainelMelhorias;
+
+   
 
     public void AtivarPainelDeCentrosDePesquisa()
     {
@@ -20,11 +27,18 @@ public class GerenciarAbas : MonoBehaviour
         painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().interactable = true;
         painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().transform.SetAsLastSibling();
 
+        botaoQueAtivaPainelCentrosDePesquisa.transform.SetAsLastSibling();
+
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
+
+
+
     }
 
     public void AtivarPainelDeMeiosDeProducao()
     {
-
         painelDeMelhorias.GetComponent<CanvasGroup>().alpha = 0.0f;
         painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().alpha = 0.0f;
 
@@ -34,10 +48,17 @@ public class GerenciarAbas : MonoBehaviour
         painelDeMeiosdeProducao.GetComponent<CanvasGroup>().alpha = 1.0f;
         painelDeMeiosdeProducao.GetComponent<CanvasGroup>().interactable = true;
         painelDeMeiosdeProducao.GetComponent<CanvasGroup>().transform.SetAsLastSibling();
+
+        botaoQueAtivaPainelMeiosDeProducao.transform.SetAsLastSibling();
+
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
     }
 
     public void AtivarPainelDeMelhorias()
     {
+        
         painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().alpha = 0.0f;
         painelDeMeiosdeProducao.GetComponent<CanvasGroup>().alpha = 0.0f;
 
@@ -47,5 +68,12 @@ public class GerenciarAbas : MonoBehaviour
         painelDeMelhorias.GetComponent<CanvasGroup>().alpha= 1.0f;
         painelDeMelhorias.GetComponent<CanvasGroup>().interactable = true;
         painelDeMelhorias.GetComponent<CanvasGroup>().transform.SetAsLastSibling();
+
+        botaoQueAtivaPainelMelhorias.transform.SetAsLastSibling();
+       
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
+
     }
 }
