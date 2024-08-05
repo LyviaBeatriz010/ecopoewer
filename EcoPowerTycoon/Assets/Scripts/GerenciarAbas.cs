@@ -29,7 +29,7 @@ public class GerenciarAbas : MonoBehaviour
 
         botaoQueAtivaPainelCentrosDePesquisa.transform.SetAsLastSibling();
 
-        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
         botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
         botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
 
@@ -51,7 +51,7 @@ public class GerenciarAbas : MonoBehaviour
 
         botaoQueAtivaPainelMeiosDeProducao.transform.SetAsLastSibling();
 
-        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
         botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
         botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
     }
@@ -71,7 +71,7 @@ public class GerenciarAbas : MonoBehaviour
 
         botaoQueAtivaPainelMelhorias.transform.SetAsLastSibling();
        
-        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = new Color(59f / 255f, 59f / 255f, 59f / 255);
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
         botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
         botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
 
