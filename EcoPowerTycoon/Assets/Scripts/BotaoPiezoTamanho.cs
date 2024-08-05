@@ -13,6 +13,8 @@ public class BotaoPiezoTamanho : MonoBehaviour, IPointerDownHandler, IPointerUpH
 
     private Image spriteAtualdoBotao;
 
+    public float variacaoDoTamanho;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class BotaoPiezoTamanho : MonoBehaviour, IPointerDownHandler, IPointerUpH
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        transform.localScale = tamanhoOriginal * 0.9f;
+        transform.localScale = tamanhoOriginal * variacaoDoTamanho;
         
         spriteAtualdoBotao.sprite = botaopiezoPressionado;
     }
