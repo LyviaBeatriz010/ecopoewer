@@ -125,7 +125,16 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            painelDePausa.SetActive(true);
+            painelDePausa.SetActive(!painelDePausa.activeSelf);
+
+            if (painelDePausa.activeSelf)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
         }
     }
 

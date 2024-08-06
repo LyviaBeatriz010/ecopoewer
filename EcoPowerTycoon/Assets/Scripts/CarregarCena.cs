@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,5 +19,20 @@ public class CarregarCena : MonoBehaviour
     public void CarregarTutorial()
     {
         SceneManager.LoadScene(2);
+    }
+
+    public void FecharJogo()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
+        
+        Application.Quit();
+        
+    }
+
+    public void VoltarParaOTempoNormal()
+    {
+        Time.timeScale = 1;
     }
 }
