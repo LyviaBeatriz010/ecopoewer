@@ -15,5 +15,7 @@ public class CursorCustom : MonoBehaviour
 
           worldPosition.z = 0;
           pezinho.position = worldPosition;
+          
      }
+     
 }

@@ -103,6 +103,34 @@ public class Usina : MonoBehaviour
          aud.PlayOneShot(somErroNaCompra, 0.2f);
       }  
    }
+   
+   public void DesbloquearUsinaComDinheiro()
+   {
+      if (GameManager.instance.FazerCompra(precoDeDesbloqueio))
+      {
+         quantidadeUsinas += 1;
+         textoQuantidadeDeUsinas.text = quantidadeUsinas.ToString();
+
+         aud.PlayOneShot(somDeDesbloqueioUsina, 1f);
+         botaoDaUsina.interactable = true;
+         botaoParaDesbloquear.SetActive(false);
+         
+         if (quantidadeUsinas == 1)
+         {
+            produzindo = true;
+         
+            StartCoroutine(ProduzindoEnergia());
+         }
+
+         ControlarMensagens.instance.MensagemDeDesbloqueioUsina();
+      }
+      else
+      {
+         //compra deu errado
+         //chamada de audio de fracasso
+         aud.PlayOneShot(somErroNaCompra, 0.2f);
+      }  
+   }
 
    public void AtualizarProducaoPorSegundo()
    {

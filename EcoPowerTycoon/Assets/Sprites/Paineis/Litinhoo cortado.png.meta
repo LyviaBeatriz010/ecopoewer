@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e72b0fe0e0989a2499841266e7608fd1
+guid: 23ed9948f69235348a09fbe065f8f02a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Painel_0
+      name: Litinhoo cortado_0
       rect:
         serializedVersion: 2
-        x: 93
-        y: 316
-        width: 869
-        height: 328
+        x: 26
+        y: 0
+        width: 442
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e655998cb8f693742b629726391f8fc0
-      internalID: 320365532
+      spriteID: 12d204ee40d7ec847b0b21461465d846
+      internalID: 1137006331
       vertices: []
       indices: 
       edges: []
@@ -154,7 +154,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Painel_0: 320365532
+      Litinhoo cortado_0: 1137006331
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
