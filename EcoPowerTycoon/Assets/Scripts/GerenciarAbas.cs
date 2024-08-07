@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,10 @@ public class GerenciarAbas : MonoBehaviour
     public GameObject botaoQueAtivaPainelCentrosDePesquisa;
     public GameObject botaoQueAtivaPainelMeiosDeProducao;
     public GameObject botaoQueAtivaPainelMelhorias;
+
+    public TextMeshProUGUI textoBotaoI;
+    public TextMeshProUGUI textoBotaoII;
+    public TextMeshProUGUI textoBotaoIII;
 
    
 
@@ -30,8 +35,14 @@ public class GerenciarAbas : MonoBehaviour
         botaoQueAtivaPainelCentrosDePesquisa.transform.SetAsLastSibling();
 
         botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
-        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
-        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelCentrosDePesquisa.GetComponentInChildren<TMP_Text>().color = new Color(150f / 255f, 150f / 255f, 150f / 255); 
+        
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color =  new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelMeiosDeProducao.GetComponentInChildren<TMP_Text>().color = Color.black;
+        
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color =  new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelMelhorias.GetComponentInChildren<TMP_Text>().color = Color.black;
+       
 
 
 
@@ -52,11 +63,16 @@ public class GerenciarAbas : MonoBehaviour
         botaoQueAtivaPainelMeiosDeProducao.transform.SetAsLastSibling();
 
         botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
-        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
-        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelMeiosDeProducao.GetComponentInChildren<TMP_Text>().color = new Color(150f / 255f, 150f / 255f, 150f / 255); 
+        
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelCentrosDePesquisa.GetComponentInChildren<TMP_Text>().color = Color.black;
+        
+        botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color =  new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelMelhorias.GetComponentInChildren<TMP_Text>().color = Color.black;
     }
-
-    public void AtivarPainelDeMelhorias()
+        
+        public void AtivarPainelDeMelhorias()
     {
         
         painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().alpha = 0.0f;
@@ -72,8 +88,13 @@ public class GerenciarAbas : MonoBehaviour
         botaoQueAtivaPainelMelhorias.transform.SetAsLastSibling();
        
         botaoQueAtivaPainelMelhorias.gameObject.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
-        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color = Color.gray;
-        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = Color.gray;
+        botaoQueAtivaPainelMelhorias.GetComponentInChildren<TMP_Text>().color = new Color(150f / 255f, 150f / 255f, 150f / 255);
+        
+        botaoQueAtivaPainelCentrosDePesquisa.gameObject.GetComponent<Image>().color =  new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelCentrosDePesquisa.GetComponentInChildren<TMP_Text>().color = Color.black;
+        
+        botaoQueAtivaPainelMeiosDeProducao.gameObject.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
+        botaoQueAtivaPainelMeiosDeProducao.GetComponentInChildren<TMP_Text>().color = Color.black;
 
     }
 }
