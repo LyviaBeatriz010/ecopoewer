@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
     public bool acabou = false;
     public bool anoFinal = false;
     public bool cumpriuMeta = false;
+
+    public Particulas objParticulas;
     
     //public string[] usinas;
 
@@ -243,6 +245,8 @@ public class GameManager : MonoBehaviour
 
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
+
+            objParticulas.AtivarParticulas();
             
             ControlarGrafico.instance.AtualizarGrafico();
         }

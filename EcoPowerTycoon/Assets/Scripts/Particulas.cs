@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Particulas : MonoBehaviour
 {
-     public GameObject particulas;
-
+    public GameObject particulas;
+    
     public void AtivarParticulas()
     {
         particulas.SetActive(true);
