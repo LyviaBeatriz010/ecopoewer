@@ -4,17 +4,32 @@ using UnityEngine;
 
 public class Particulas : MonoBehaviour
 {
-    public GameObject particulas;
-    
-    public void AtivarParticulas()
+    public static Particulas instance;
+    public GameObject particulasDinheiro;
+    public GameObject particulasPesquisa;
+
+
+    private void Start()
     {
-        particulas.SetActive(true);
-        StartCoroutine(DesativarParticulas(1.4f));  
+        instance = this;
     }
 
-    private IEnumerator DesativarParticulas(float time)
+    public void AtivarParticulasDinheiro()
+    {
+        particulasDinheiro.SetActive(true);
+        StartCoroutine(DesativarParticulasDinheiro(1.4f));  
+    }
+
+    private IEnumerator DesativarParticulasDinheiro(float time)
     {
         yield return new WaitForSeconds(time);
-        particulas.SetActive(false);
+        particulasDinheiro.SetActive(false);
+    }
+
+   
+    public void AtivarParticulasPesquisa()
+    {
+        particulasPesquisa.SetActive(true);
+       
     }
 }

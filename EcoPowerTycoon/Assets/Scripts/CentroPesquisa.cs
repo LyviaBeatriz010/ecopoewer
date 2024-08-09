@@ -31,6 +31,8 @@ public class CentroPesquisa : MonoBehaviour
    public AudioClip somDeDesbloqueioCentro;
 
    public bool produzindoPontos = false;
+
+    public Particulas objParticulas;
    void Start()
    {
       aud = GetComponent<AudioSource>();
@@ -67,6 +69,7 @@ public class CentroPesquisa : MonoBehaviour
       {
          GameManager.instance.pontosPesquisaAtual += (pontosPorSegundo * quantidadeCentros);
          GameManager.instance.textoPontosPesquisaAtual.text = GameManager.instance.pontosPesquisaAtual.ToString();
+         Particulas.instance.AtivarParticulasPesquisa();
       
          yield return new WaitForSeconds(1.0f);  
       }
@@ -92,7 +95,7 @@ public class CentroPesquisa : MonoBehaviour
             StartCoroutine(ProduzindoPontos());
          }
 
-         ControlarMensagens.instance.MensagemDesbloqueioCentro();
+         //ControlarMensagens.instance.MensagemDesbloqueioCentro();
       }
       else
       {

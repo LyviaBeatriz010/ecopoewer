@@ -246,7 +246,7 @@ public class GameManager : MonoBehaviour
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
 
-            objParticulas.AtivarParticulas();
+            objParticulas.AtivarParticulasDinheiro();
             
             ControlarGrafico.instance.AtualizarGrafico();
         }
