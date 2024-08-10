@@ -2021,8 +2021,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1693371085}
   m_HandleRect: {fileID: 1693371084}
   m_Direction: 2
-  m_Value: -0.00000023910036
-  m_Size: 0.40997133
+  m_Value: 1
+  m_Size: 0.40997136
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4021,7 +4021,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1884887976}
   m_HandleRect: {fileID: 1884887975}
   m_Direction: 2
-  m_Value: -0.000003168539
+  m_Value: 1.0000036
   m_Size: 0.64383936
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6186,7 +6186,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.11999512, y: -9.940002}
+  m_AnchoredPosition: {x: -0.11999512, y: -9.940018}
   m_SizeDelta: {x: 15.9, y: -19.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &544127604
@@ -7540,8 +7540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 727.09033}
-  m_SizeDelta: {x: 0, y: 1094.55}
+  m_AnchoredPosition: {x: 0, y: -0.00014669802}
+  m_SizeDelta: {x: 0, y: 1234.22}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &626239519
 MonoBehaviour:
@@ -8172,10 +8172,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1793027662}
   m_LocalEulerAnglesHint: {x: -89.053, y: -90, z: 90}
-  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.4875, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -43}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -21, y: -73}
+  m_SizeDelta: {x: 90, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &646246999
 CanvasRenderer:
@@ -8890,7 +8890,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 4
+    type: 12
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -8898,7 +8898,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
-    m_Scale: {x: 1, y: 1, z: 1}
+    m_Scale: {x: 2.56, y: 0, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -9202,7 +9202,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -9212,22 +9212,40 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
+          time: 0.013889313
+          value: 0.097060025
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 1
-          value: 1
-          inSlope: 1
-          outSlope: 0
+          time: 0.13022095
+          value: 0.7032434
+          inSlope: 0.11751718
+          outSlope: 0.11751718
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
+          outWeight: 0.76337147
+        - serializedVersion: 3
+          time: 0.18733
+          value: 0
+          inSlope: -2.2860725
+          outSlope: -2.2860725
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.15571313
+        - serializedVersion: 3
+          time: 0.9328681
+          value: 0
+          inSlope: -Infinity
+          outSlope: -Infinity
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -16211,7 +16229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.9357, y: 202.26074}
+  m_AnchoredPosition: {x: -1.9357, y: -0.0007818831}
   m_SizeDelta: {x: 0, y: 567.89}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &844695514
@@ -16865,8 +16883,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 544127604}
   m_HandleRect: {fileID: 544127603}
   m_Direction: 2
-  m_Value: -0.00000016788881
-  m_Size: 0.33571783
+  m_Value: 1.0000001
+  m_Size: 0.29772648
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17977,7 +17995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 510.54016}
+  m_AnchoredPosition: {x: 0, y: 0.0000059097824}
   m_SizeDelta: {x: 0, y: 865.28}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1050400371

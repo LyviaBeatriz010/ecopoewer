@@ -17,7 +17,7 @@ public class Particulas : MonoBehaviour
     public void AtivarParticulasDinheiro()
     {
         particulasDinheiro.SetActive(true);
-        StartCoroutine(DesativarParticulasDinheiro(1.4f));  
+        StartCoroutine(DesativarParticulasDinheiro(1.5f));  
     }
 
     private IEnumerator DesativarParticulasDinheiro(float time)
