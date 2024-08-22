@@ -53,8 +53,9 @@ public class GameManager : MonoBehaviour
     public bool anoFinal = false;
     public bool cumpriuMeta = false;
 
-    public Particulas objParticulas;
+    static Vector3 posicaoParticulasDeDinheiro = new Vector3(1f,2f,2f);
     
+    //public Particulas objParticulas;
     //public string[] usinas;
 
     void Awake()
@@ -246,7 +247,8 @@ public class GameManager : MonoBehaviour
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
 
-            objParticulas.AtivarParticulasDinheiro();
+           // objParticulas.AtivarParticulasDinheiro();
+           ParticleObserver.OnInstanciarParticulasDeDinheiroEvent(posicaoParticulasDeDinheiro);
             
             ControlarGrafico.instance.AtualizarGrafico();
         }
