@@ -8,7 +8,7 @@ public class CarregarCena : MonoBehaviour
 {
    public void CarregarJogo()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void CarregarMenu()
@@ -18,7 +18,7 @@ public class CarregarCena : MonoBehaviour
 
     public void CarregarTutorial()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void FecharJogo()

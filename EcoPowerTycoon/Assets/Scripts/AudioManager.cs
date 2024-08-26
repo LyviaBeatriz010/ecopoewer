@@ -1,11 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
-{
+ {
+    private AudioSource aud;
+    public AudioClip loopDoMenu;
+    public AudioClip loopDoGame;
+
+    private int indiceDaCena;
+    private int cenaAtual;
+
+    public bool trocarDeMusica = true;
+
     public static AudioManager instance;
-    private void Awake()
+
+    void Awake()
     {
         if (instance == null)
         {
@@ -18,5 +31,46 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    
+    void Start()
+    {
+        aud = GetComponent<AudioSource>();
+        indiceDaCena = SceneManager.GetActiveScene().buildIndex;
+        cenaAtual = indiceDaCena;
+        TocarMusica(indiceDaCena);
+    }
+
+    void Update()
+    {
+        indiceDaCena = SceneManager.GetActiveScene().buildIndex;
+        if (indiceDaCena != cenaAtual)
+        {
+            cenaAtual = indiceDaCena;
+            TocarMusica(indiceDaCena);
+        }
+    }
+
+    void TocarMusica(int indiceDaCena)
+    {
+        if (aud.isPlaying)
+        {
+            aud.Stop();
+        }
+
+        if (indiceDaCena == 0 )
+        {
+            aud.clip = loopDoMenu;
+        }
+        
+        else if (indiceDaCena == 2)
+        {
+            aud.clip = loopDoGame;
+        }
+        if (aud.clip != null)
+        {
+            aud.Play();
+        }
+
+    }
 }
+
+
