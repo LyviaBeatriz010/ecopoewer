@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     public float volume;
 
     public static AudioManager instance;
+    public GameObject sliderObj;
 
     void Awake()
     {
@@ -75,6 +76,12 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+
+    public void AtivarSlider()
+    {
+        sliderObj.SetActive(!sliderObj.activeSelf);
+    }
+    
     private void OnEnable()
     {
         AudioObserver.OnVolumeChanged += ProcessVolumeChanged;
