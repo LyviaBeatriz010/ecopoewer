@@ -3,7 +3,7 @@ public class EcoEnum
     
    public enum Meta
       {
-          Ano2026 = 1000,
+          Ano2026 = 10,
           Ano2027 = 10000,
           Ano2028 = 20000,
           Ano2029 = 30000,

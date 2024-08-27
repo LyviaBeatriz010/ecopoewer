@@ -43,6 +43,8 @@ public class AudioManager : MonoBehaviour
 
     void Update()
     {
+        aud.volume = volume;
+        
         indiceDaCena = SceneManager.GetActiveScene().buildIndex;
         if (indiceDaCena != cenaAtual)
         {
