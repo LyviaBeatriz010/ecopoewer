@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour
     private int cenaAtual;
 
     public bool trocarDeMusica = true;
+    
+    public float volume;
 
     public static AudioManager instance;
 
@@ -71,6 +73,20 @@ public class AudioManager : MonoBehaviour
         }
 
     }
-}
+    private void OnEnable()
+    {
+        AudioObserver.OnVolumeChanged += ProcessVolumeChanged;
+    }
+
+    private void ProcessVolumeChanged(float value)
+    {
+        aud.volume = value;
+    }
+
+    private void OnDisable()
+    {
+        AudioObserver.OnVolumeChanged -= ProcessVolumeChanged;
+    }
+ }
 
 
