@@ -21,6 +21,10 @@ public class CentroDePesquisaBehaviour : StateMachineBehaviour
         gerenciador.botaoQueAtivaPainelMeiosDeProducao.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
         gerenciador.botaoQueAtivaPainelMelhorias.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
 
+        gerenciador.textoBotaoI.color = Color.gray;
+        gerenciador.textoBotaoII.color = Color.black;
+        gerenciador.textoBotaoIII.color = Color.black;
+
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

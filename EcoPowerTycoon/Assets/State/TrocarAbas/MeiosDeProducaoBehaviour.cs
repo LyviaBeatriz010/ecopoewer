@@ -23,6 +23,10 @@ public class MeiosDeProducaoBehaviour : StateMachineBehaviour
         gerenciador.botaoQueAtivaPainelMeiosDeProducao.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
         gerenciador.botaoQueAtivaPainelCentrosDePesquisa.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
         gerenciador.botaoQueAtivaPainelMelhorias.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
+
+        gerenciador.textoBotaoI.color = Color.black;
+        gerenciador.textoBotaoII.color = Color.gray;
+        gerenciador.textoBotaoIII.color = Color.black;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

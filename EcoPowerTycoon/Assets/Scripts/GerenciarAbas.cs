@@ -13,6 +13,14 @@ public class GerenciarAbas : MonoBehaviour
     public GameObject botaoQueAtivaPainelMeiosDeProducao;
     public GameObject botaoQueAtivaPainelMelhorias;
 
+    public TextMeshProUGUI textoBotaoI;
+    public TextMeshProUGUI textoBotaoII;
+    public TextMeshProUGUI textoBotaoIII;
+
+
+
+
+
     [SerializeField] private Animator myFSM;
 
     void Start()
