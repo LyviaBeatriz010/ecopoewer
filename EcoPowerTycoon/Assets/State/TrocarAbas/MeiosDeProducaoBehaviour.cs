@@ -1,25 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ONCorDasAbasBehaviour : StateMachineBehaviour
+public class MeiosDeProducaoBehaviour : StateMachineBehaviour
 {
-    public GameObject painelAtivo; 
-
+    // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GerenciarAbas gerenciarAbas = FindObjectOfType<GerenciarAbas>();
-        if (gerenciarAbas != null)
-        {
-            if (painelAtivo == gerenciarAbas.painelDeCentrosDePesquisa)
-                gerenciarAbas.AtivarPainelDeCentrosDePesquisa();
-            else if (painelAtivo == gerenciarAbas.painelDeMeiosdeProducao)
-                gerenciarAbas.AtivarPainelDeMeiosDeProducao();
-            else if (painelAtivo == gerenciarAbas.painelDeMelhorias)
-                gerenciarAbas.AtivarPainelDeMelhorias();
-        }
+        GerenciarAbas gerenciador = animator.GetComponent<GerenciarAbas>();
+
+        
+        gerenciador.painelDeMeiosdeProducao.GetComponent<CanvasGroup>().alpha = 1.0f;
+        gerenciador.painelDeMeiosdeProducao.GetComponent<CanvasGroup>().interactable = true;
+        gerenciador.painelDeMeiosdeProducao.transform.SetAsLastSibling();
+
+       
+        gerenciador.painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().alpha = 0.0f;
+        gerenciador.painelDeMelhorias.GetComponent<CanvasGroup>().alpha = 0.0f;
+
+        
+        gerenciador.botaoQueAtivaPainelMeiosDeProducao.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
+        gerenciador.botaoQueAtivaPainelCentrosDePesquisa.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
+        gerenciador.botaoQueAtivaPainelMelhorias.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
     }
+
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{

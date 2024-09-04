@@ -885,8 +885,8 @@ GameObject:
   - component: {fileID: 49882880}
   - component: {fileID: 49882882}
   - component: {fileID: 49882881}
-  - component: {fileID: 49882883}
   - component: {fileID: 49882884}
+  - component: {fileID: 49882885}
   m_Layer: 5
   m_Name: (Panel) Painel de compras em abas
   m_TagString: Untagged
@@ -957,26 +957,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49882879}
   m_CullTransparentMesh: 1
---- !u!114 &49882883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 49882879}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 937d714ddbe76894ba7d9cd106edecd0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  painelAtivo: {fileID: 0}
-  painelDeCentrosDePesquisa: {fileID: 1406722094}
-  painelDeMeiosdeProducao: {fileID: 241303927}
-  painelDeMelhorias: {fileID: 90479476}
-  botaoQueAtivaPainelCentrosDePesquisa: {fileID: 667984956}
-  botaoQueAtivaPainelMeiosDeProducao: {fileID: 1829411489}
-  botaoQueAtivaPainelMelhorias: {fileID: 203811705}
-  myFSM: {fileID: 49882884}
 --- !u!95 &49882884
 Animator:
   serializedVersion: 5
@@ -998,6 +978,26 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &49882885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49882879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 937d714ddbe76894ba7d9cd106edecd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  painelAtivo: {fileID: 0}
+  painelDeCentrosDePesquisa: {fileID: 1406722094}
+  painelDeMeiosdeProducao: {fileID: 241303927}
+  painelDeMelhorias: {fileID: 90479476}
+  botaoQueAtivaPainelCentrosDePesquisa: {fileID: 667984956}
+  botaoQueAtivaPainelMeiosDeProducao: {fileID: 1829411489}
+  botaoQueAtivaPainelMelhorias: {fileID: 203811705}
+  myFSM: {fileID: 49882884}
 --- !u!1 &65215620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,8 +2042,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1693371085}
   m_HandleRect: {fileID: 1693371084}
   m_Direction: 2
-  m_Value: 1.0000001
-  m_Size: 0.54558057
+  m_Value: 1.0000004
+  m_Size: 0.5455806
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2550,9 +2550,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 49882883}
+      - m_Target: {fileID: 49882885}
         m_TargetAssemblyTypeName: GerenciarAbas, Assembly-CSharp
-        m_MethodName: AtivarPainelDeMelhorias
+        m_MethodName: AtivarPainelMelhorias
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8954,9 +8954,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 49882883}
+      - m_Target: {fileID: 49882885}
         m_TargetAssemblyTypeName: GerenciarAbas, Assembly-CSharp
-        m_MethodName: AtivarPainelDeCentrosDePesquisa
+        m_MethodName: AtivarPainelCentrosDePesquisa
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11916,7 +11916,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 544127603}
   m_Direction: 2
   m_Value: 1.0000013
-  m_Size: 0.39571548
+  m_Size: 0.39571556
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20543,9 +20543,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 49882883}
+      - m_Target: {fileID: 49882885}
         m_TargetAssemblyTypeName: GerenciarAbas, Assembly-CSharp
-        m_MethodName: AtivarPainelDeMeiosDeProducao
+        m_MethodName: AtivarPainelMeiosDeProducao
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

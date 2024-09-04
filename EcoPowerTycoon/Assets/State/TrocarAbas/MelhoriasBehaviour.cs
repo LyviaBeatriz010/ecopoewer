@@ -1,31 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class OFFCorDasAbasBehaviour : StateMachineBehaviour
+public class MelhoriasBehaviour : StateMachineBehaviour
 {
-    public GameObject painelInativo; 
-    private GerenciarAbas gerenciarAbas;
-
     
+    //OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (gerenciarAbas == null)
-        {
-            gerenciarAbas = FindObjectOfType<GerenciarAbas>();
-        }
+        GerenciarAbas gerenciador = animator.GetComponent<GerenciarAbas>();
 
-        if (gerenciarAbas != null)
-        {
-          
-            if (painelInativo == gerenciarAbas.painelDeCentrosDePesquisa)
-                gerenciarAbas.AtualizarBotao(gerenciarAbas.botaoQueAtivaPainelCentrosDePesquisa, false);
-            else if (painelInativo == gerenciarAbas.painelDeMeiosdeProducao)
-                gerenciarAbas.AtualizarBotao(gerenciarAbas.botaoQueAtivaPainelMeiosDeProducao, false);
-            else if (painelInativo == gerenciarAbas.painelDeMelhorias)
-                gerenciarAbas.AtualizarBotao(gerenciarAbas.botaoQueAtivaPainelMelhorias, false);
-        }
+  
+        gerenciador.painelDeMelhorias.GetComponent<CanvasGroup>().alpha = 1.0f;
+        gerenciador.painelDeMelhorias.GetComponent<CanvasGroup>().interactable = true;
+        gerenciador.painelDeMelhorias.transform.SetAsLastSibling();
+
+   
+        gerenciador.painelDeCentrosDePesquisa.GetComponent<CanvasGroup>().alpha = 0.0f;
+        gerenciador.painelDeMeiosdeProducao.GetComponent<CanvasGroup>().alpha = 0.0f;
+
+       
+        gerenciador.botaoQueAtivaPainelMelhorias.GetComponent<Image>().color = new Color(2f / 255f, 61f / 255f, 97f / 255);
+        gerenciador.botaoQueAtivaPainelCentrosDePesquisa.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
+        gerenciador.botaoQueAtivaPainelMeiosDeProducao.GetComponent<Image>().color = new Color(246f / 255f, 249f / 255f, 145f / 255);
     }
+
+
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     //override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
