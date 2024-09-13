@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -25,6 +26,16 @@ public class ControlarGrafico : MonoBehaviour
     {
         //if(GameManager.instance)
        // AtualizarGrafico();
+    }
+
+    private void OnEnable()
+    {
+        GraficoObserver.GraficoEmptyEvent += AtualizarGrafico;
+    }
+
+    private void OnDisable()
+    {
+        GraficoObserver.GraficoEmptyEvent -= AtualizarGrafico;
     }
 
     public void AtualizarGrafico()

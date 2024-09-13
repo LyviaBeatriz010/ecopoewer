@@ -254,7 +254,9 @@ public class GameManager : MonoBehaviour
            // objParticulas.AtivarParticulasDinheiro();
            ParticleObserver.OnInstanciarParticulasDeDinheiroEvent(posicaoParticulasDeDinheiro);
             
-            ControlarGrafico.instance.AtualizarGrafico();
+           //ControlarGrafico.instance.AtualizarGrafico();
+           
+           GraficoObserver.OnGraficoEmptyEvent();
         }
     }
 
@@ -276,7 +278,8 @@ public class GameManager : MonoBehaviour
             textoEnergiaAtual.text = energiaAtual.ToString();
             textoDinheiro.text = dinheiroAtual.ToString();
 
-            ControlarGrafico.instance.AtualizarGrafico();
+            //ControlarGrafico.instance.AtualizarGrafico();
+            GraficoObserver.OnGraficoEmptyEvent();
         }
     }
 
