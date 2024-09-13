@@ -240,12 +240,16 @@ public class GameManager : MonoBehaviour
         {
             aud.PlayOneShot(somVenderEnergia, 0.6f);
 
-            dinheiroAtual += energiaAtual;
+            //dinheiroAtual += energiaAtual;
+            
+            DinheiroObserver.OnDinheiroContarEvent(energiaAtual);
             distribuicaoAtual += energiaAtual;
             energiaAtual = 0;
 
             textoEnergiaAtual.text = energiaAtual.ToString();
-            textoDinheiro.text = dinheiroAtual.ToString();
+            
+            DinheiroObserver.OnDinheiroTextoEvent(dinheiroAtual.ToString());
+            //textoDinheiro.text = dinheiroAtual.ToString();
 
            // objParticulas.AtivarParticulasDinheiro();
            ParticleObserver.OnInstanciarParticulasDeDinheiroEvent(posicaoParticulasDeDinheiro);
