@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &14032322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -875,6 +875,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &26830791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26830792}
+  m_Layer: 5
+  m_Name: (Images) Usinas solares
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &26830792
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26830791}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1476330939}
+  - {fileID: 936457185}
+  - {fileID: 1168503080}
+  - {fileID: 1727404235}
+  - {fileID: 548937423}
+  - {fileID: 1864606896}
+  - {fileID: 1256011191}
+  - {fileID: 77091338}
+  - {fileID: 835703655}
+  m_Father: {fileID: 454742119}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &34279339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1576,81 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6501923903710901131, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
   m_PrefabInstance: {fileID: 71391774}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &77091337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 77091338}
+  - component: {fileID: 77091340}
+  - component: {fileID: 77091339}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &77091338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77091337}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 43.9, y: 92}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &77091339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77091337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &77091340
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77091337}
+  m_CullTransparentMesh: 1
 --- !u!1 &80616614
 GameObject:
   m_ObjectHideFlags: 0
@@ -4559,7 +4678,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &350270881
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6181,15 +6300,16 @@ RectTransform:
   - {fileID: 1865156800}
   - {fileID: 173658557}
   - {fileID: 975381461}
+  - {fileID: 350270881}
   - {fileID: 1749436549}
-  - {fileID: 1176853696}
   - {fileID: 638434874}
   - {fileID: 1455455775}
-  - {fileID: 1678160359}
-  - {fileID: 350270881}
   - {fileID: 619224298}
   - {fileID: 1866958572}
   - {fileID: 14032322}
+  - {fileID: 1176853696}
+  - {fileID: 1678160359}
+  - {fileID: 26830792}
   m_Father: {fileID: 1806696052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6758,6 +6878,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547961063}
+  m_CullTransparentMesh: 1
+--- !u!1 &548937422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 548937423}
+  - component: {fileID: 548937425}
+  - component: {fileID: 548937424}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &548937423
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548937422}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.8, y: -3.9}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &548937424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548937422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &548937425
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548937422}
   m_CullTransparentMesh: 1
 --- !u!1 &554426133
 GameObject:
@@ -7906,7 +8101,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &619224298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8629,7 +8824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &638434874
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10184,6 +10379,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &707749976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 695102445}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707749969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &709211374
 GameObject:
   m_ObjectHideFlags: 0
@@ -11969,6 +12175,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810358414}
   m_CullTransparentMesh: 1
+--- !u!1 &835703654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 835703655}
+  - component: {fileID: 835703657}
+  - component: {fileID: 835703656}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &835703655
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835703654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 27.2, y: 92}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &835703656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835703654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &835703657
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835703654}
+  m_CullTransparentMesh: 1
 --- !u!1 &844695512
 GameObject:
   m_ObjectHideFlags: 0
@@ -12311,6 +12592,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &855115614 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 628236064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855115607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &857884363
 GameObject:
   m_ObjectHideFlags: 0
@@ -13019,6 +13311,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935235354}
   m_CullTransparentMesh: 1
+--- !u!1 &936457184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936457185}
+  - component: {fileID: 936457187}
+  - component: {fileID: 936457186}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &936457185
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936457184}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 148, y: -89.1}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &936457186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936457184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &936457187
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936457184}
+  m_CullTransparentMesh: 1
 --- !u!1 &955939243
 GameObject:
   m_ObjectHideFlags: 0
@@ -13111,7 +13478,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &958206484
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14838,6 +15205,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &1106714076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 1106714068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660285529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1112017792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15504,6 +15882,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142800570}
   m_CullTransparentMesh: 1
+--- !u!1 &1168503079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1168503080}
+  - component: {fileID: 1168503082}
+  - component: {fileID: 1168503081}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1168503080
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168503079}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.9, y: -87.6}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1168503081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168503079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1168503082
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168503079}
+  m_CullTransparentMesh: 1
 --- !u!1 &1176853695
 GameObject:
   m_ObjectHideFlags: 0
@@ -15521,7 +15974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1176853696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16406,6 +16859,81 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3559839209038411000, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
   m_PrefabInstance: {fileID: 1229441183}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1256011190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256011191}
+  - component: {fileID: 1256011193}
+  - component: {fileID: 1256011192}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1256011191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256011190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 41.8, y: -6.1}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1256011192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256011190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1256011193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256011190}
+  m_CullTransparentMesh: 1
 --- !u!114 &1261834149 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
@@ -17414,6 +17942,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &1351539377 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 1351539369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274441331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1386770381
 GameObject:
   m_ObjectHideFlags: 0
@@ -18193,7 +18732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1455455775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18250,6 +18789,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455455774}
+  m_CullTransparentMesh: 1
+--- !u!1 &1476330938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476330939}
+  - component: {fileID: 1476330941}
+  - component: {fileID: 1476330940}
+  m_Layer: 5
+  m_Name: '(Image) Usina solar '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1476330939
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476330938}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 127.1, y: -89.1}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1476330940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476330938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1476330941
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476330938}
   m_CullTransparentMesh: 1
 --- !u!1001 &1485191762
 PrefabInstance:
@@ -20270,7 +20884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1678160359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21183,6 +21797,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &1719392164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 609726703}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719392157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1727404234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1727404235}
+  - component: {fileID: 1727404237}
+  - component: {fileID: 1727404236}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1727404235
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727404234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -11.5, y: -3.9}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1727404236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727404234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1727404237
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727404234}
+  m_CullTransparentMesh: 1
 --- !u!1 &1739726252
 GameObject:
   m_ObjectHideFlags: 0
@@ -21350,7 +22050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1749436549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22009,6 +22709,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particulaDeDinheiro: {fileID: 3568477160832521541, guid: 7bf377f648582d94c88ca99798de7008, type: 3}
+--- !u!1 &1864606895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1864606896}
+  - component: {fileID: 1864606898}
+  - component: {fileID: 1864606897}
+  m_Layer: 5
+  m_Name: (Image) Usina solar  (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1864606896
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864606895}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.53154, y: 0.53154, z: 0.53154}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 26830792}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 24.1, y: -6.1}
+  m_SizeDelta: {x: 31, y: 14}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1864606897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864606895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -40232092, guid: 3193cced50834bc4ebf45fdc83ab2799, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1864606898
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864606895}
+  m_CullTransparentMesh: 1
 --- !u!1 &1865156799
 GameObject:
   m_ObjectHideFlags: 0
@@ -22101,7 +22876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1866958572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22264,6 +23039,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3a9ca19c6bb6924eb1c7ae89cbe2ffe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  usina1: {fileID: 2021298024}
+  usina2: {fileID: 15709442}
+  usina3: {fileID: 647133419}
+  usina4: {fileID: 2088326544}
+  usina5: {fileID: 2073431295}
+  usina6: {fileID: 1351539377}
+  usina7: {fileID: 707749976}
+  usina8: {fileID: 855115614}
+  usina9: {fileID: 1719392164}
+  usina10: {fileID: 1106714076}
   centroPesquisa1: {fileID: 1261834149}
   centroPesquisa2: {fileID: 1709850423}
   centroPesquisa3: {fileID: 1112017794}
@@ -22274,6 +23059,16 @@ MonoBehaviour:
   centroP3Imagem: {fileID: 1865156799}
   centroP4Imagem: {fileID: 173658556}
   centroP5Imagem: {fileID: 975381460}
+  usina1imagem: {fileID: 26830791}
+  usina2imagem: {fileID: 350270880}
+  usina3imagem: {fileID: 1749436548}
+  usina4imagem: {fileID: 638434873}
+  usina5imagem: {fileID: 1455455774}
+  usina6imagem: {fileID: 619224297}
+  usina7imagem: {fileID: 1866958571}
+  usina8imagem: {fileID: 14032321}
+  usina9imagem: {fileID: 1176853695}
+  usina10imagem: {fileID: 1678160358}
 --- !u!4 &1880741396
 Transform:
   m_ObjectHideFlags: 0
@@ -28919,6 +29714,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &2073431295 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 1229441183}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073431288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2088326536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29359,6 +30165,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botaopiezoPressionado: {fileID: 917433905, guid: c3b76e18adf0d9f4397a81b44852bd95, type: 3}
   variacaoDoTamanho: 0.9
+--- !u!114 &2088326544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+  m_PrefabInstance: {fileID: 2088326536}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517494954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f92eb53c28cbc47828419b7ad1a8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2096752724
 GameObject:
   m_ObjectHideFlags: 0
