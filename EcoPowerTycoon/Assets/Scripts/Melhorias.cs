@@ -53,9 +53,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false; 
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
@@ -81,9 +79,6 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
         }
         else
         {
@@ -108,9 +103,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+           
         }
         else
         {
@@ -135,9 +128,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
@@ -162,9 +153,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
@@ -189,9 +178,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
@@ -215,9 +202,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
@@ -241,9 +226,7 @@ public class Melhorias : MonoBehaviour
             botaoDaMelhoria.interactable = false;
             confirmacaoDeCompra.SetActive(true);
 
-            // Mandando mensagem
-
-            ControlarMensagens.instance.MensagemDesbloqueioMelhorias();
+            
         }
         else
         {
