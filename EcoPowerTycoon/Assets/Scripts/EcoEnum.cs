@@ -4,10 +4,10 @@ public class EcoEnum
    public enum Meta
       {
           Ano2026 = 10,
-          Ano2027 = 10000,
-          Ano2028 = 20000,
-          Ano2029 = 30000,
-          Ano2030 = 45000
+          Ano2027 = 5,
+          Ano2028 = 5,
+          Ano2029 = 5,
+          Ano2030 = 5
       }
 
       public enum TipoProducao

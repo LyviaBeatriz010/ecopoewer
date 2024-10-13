@@ -16,6 +16,13 @@ public class CarregarCena : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void PauseCarregandoMenu()
+    {
+        Time.timeScale = 1;
+
+        SceneManager.LoadScene(0);
+    }
+
     public void CarregarTutorial()
     {
         SceneManager.LoadScene(1);

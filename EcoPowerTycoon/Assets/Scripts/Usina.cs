@@ -94,7 +94,7 @@ public class Usina : MonoBehaviour
             StartCoroutine(ProduzindoEnergia());
          }
 
-         ControlarMensagens.instance.MensagemDeDesbloqueioUsina();
+         //ControlarMensagens.instance.MensagemDeDesbloqueioUsina();
       }
       else
       {

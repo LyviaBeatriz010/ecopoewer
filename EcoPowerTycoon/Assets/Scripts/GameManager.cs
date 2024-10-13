@@ -35,8 +35,6 @@ public class GameManager : MonoBehaviour
     public GameObject painelDeVitoria;
     public GameObject painelDeDerrota;
     public GameObject painelDePausa;
-
-    public AudioSource volumeDoLoop;
     
     public float tempoTotal;
     public float tempoAtual;
@@ -195,13 +193,13 @@ public class GameManager : MonoBehaviour
 
             if (tempoAtual <= 0 && distribuicaoAtual < metaAtual)
             {
-                volumeDoLoop.volume = 0;
+                
                 painelDeDerrota.SetActive(true);
             }
 
             else if (tempoAtual > 0 && distribuicaoAtual >= metaAtual)
             {
-                volumeDoLoop.volume = 0;
+                
                 painelDeVitoria.SetActive(true);
             }
         }
