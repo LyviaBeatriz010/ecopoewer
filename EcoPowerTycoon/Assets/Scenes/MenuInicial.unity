@@ -1988,7 +1988,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 223770793}
         m_TargetAssemblyTypeName: CarregarCena, Assembly-CSharp
-        m_MethodName: CarregarTutorial
+        m_MethodName: CarregarCutsene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

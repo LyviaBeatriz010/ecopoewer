@@ -14,6 +14,7 @@ public class GerenciadorTutorial : MonoBehaviour
     public GameObject objetosAntigos;
 
     public int quantidadeParaParte3;
+    private int valor = 1;
 
     // GameManager
 
@@ -26,14 +27,16 @@ public class GerenciadorTutorial : MonoBehaviour
 
     public void IniciarParte3()
     {
-        if (gameManager.energiaAtual == quantidadeParaParte3)
+        if (gameManager.energiaAtual == quantidadeParaParte3 && valor == 1)
         {
             objetosAntigos.SetActive(false);
 
             painelRecursos.SetActive(true);
             botaoDistribuir.SetActive(true);
             painelMetas.SetActive(true);
-            objetosParte3.SetActive(true);  
+            objetosParte3.SetActive(true);
+
+            valor = 0;
         }
     }
 }

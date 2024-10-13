@@ -28,6 +28,11 @@ public class CarregarCena : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void CarregarCutsene()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void FecharJogo()
     {
 #if UNITY_EDITOR
