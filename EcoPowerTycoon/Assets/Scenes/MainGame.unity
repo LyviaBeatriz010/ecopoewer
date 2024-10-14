@@ -240,6 +240,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
       value: "Energia E\xF3lica"
@@ -1413,6 +1425,10 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 32000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
       objectReference: {fileID: 2021298024}
@@ -2378,7 +2394,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1693371084}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.5455807
+  m_Size: 0.54558057
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4602,8 +4618,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1884887976}
   m_HandleRect: {fileID: 1884887975}
   m_Direction: 2
-  m_Value: 1.0000056
-  m_Size: 0.8477697
+  m_Value: 1.0000063
+  m_Size: 0.8477699
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5148,6 +5164,10 @@ PrefabInstance:
     - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
@@ -5763,6 +5783,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0b87c67eadb053447968e458001ae507, type: 3}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: precoDoCentro
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: pontosPorSegundo
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: valorParaDesbloquearCentro
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -33.84001
@@ -6020,6 +6052,10 @@ PrefabInstance:
     - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 4000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
@@ -7830,6 +7866,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 1312200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 656100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
       value: "Energia Geot\xE9rmica"
@@ -8432,6 +8480,18 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 437400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 218700
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -9129,6 +9189,18 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 1800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -10204,6 +10276,18 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 145800
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 72900
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -11297,6 +11381,18 @@ PrefabInstance:
     - target: {fileID: 7039265126144167596, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -9.300021
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: precoDoCentro
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: pontosPorSegundo
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: valorParaDesbloquearCentro
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -12674,6 +12770,10 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 64000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
       objectReference: {fileID: 2021298024}
@@ -13282,7 +13382,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 544127603}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.3957155
+  m_Size: 0.39571548
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15141,6 +15241,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 3936600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 1968300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
       value: "Energia de Hidrog\xEAnio"
@@ -15968,6 +16080,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: e01810f7085e7144bb3452b1ca1738e1, type: 3}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: precoDoCentro
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: pontosPorSegundo
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: valorParaDesbloquearCentro
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -33.74002
@@ -16642,6 +16766,10 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 16000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
       objectReference: {fileID: 2021298024}
@@ -16900,6 +17028,18 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 16200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 8100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -18001,6 +18141,18 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 48600
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 24300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -19406,6 +19558,10 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 8000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
       objectReference: {fileID: 2021298024}
@@ -20230,6 +20386,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 14d6df1ddfe4db5489e9b1fc0293b3fd, type: 3}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: precoDoCentro
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: pontosPorSegundo
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: valorParaDesbloquearCentro
+      value: 5000
+      objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -33.440025
@@ -22198,6 +22366,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d5c4b4a673c9acb48ac137881797cfb0, type: 3}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: precoDoCentro
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: pontosPorSegundo
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
+      propertyPath: valorParaDesbloquearCentro
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -33.84001
@@ -22979,7 +23159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 170.69, y: -119.39}
+  m_AnchoredPosition: {x: 170.69, y: -119.390015}
   m_SizeDelta: {x: -355.68, y: -251.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1806696053
@@ -29460,6 +29640,10 @@ PrefabInstance:
       value: 4278190080
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 80000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
       value: 
       objectReference: {fileID: 2021298024}
@@ -30508,6 +30692,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 5400
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 2700
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
       value: Energia de Biomassa
@@ -31105,6 +31301,14 @@ PrefabInstance:
     - target: {fileID: 788391979496502211, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
@@ -31777,6 +31981,18 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDaUsina
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: precoDeDesbloqueio
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
+      propertyPath: producaoPorSegundo
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_margin.y
       value: -0.00000002924736
@@ -32177,6 +32393,10 @@ PrefabInstance:
     - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
+      propertyPath: precoDaMelhoria
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoEnergiaSolar
