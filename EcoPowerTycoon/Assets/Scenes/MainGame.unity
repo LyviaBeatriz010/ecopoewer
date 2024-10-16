@@ -1092,7 +1092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288.99997, y: 0.23999023}
+  m_AnchoredPosition: {x: -289, y: 0.23999023}
   m_SizeDelta: {x: 87.81, y: 1037.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &49882881
@@ -1434,7 +1434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 32000
+      value: 18000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
@@ -5842,7 +5842,7 @@ PrefabInstance:
       objectReference: {fileID: 1291389807}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 30
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -6112,7 +6112,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 4000
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
@@ -11608,7 +11608,7 @@ PrefabInstance:
       objectReference: {fileID: 1241454002}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -12995,7 +12995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 64000
+      value: 31000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
@@ -16359,7 +16359,7 @@ PrefabInstance:
       objectReference: {fileID: 1369496043}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -17055,7 +17055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 16000
+      value: 13000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
@@ -19944,7 +19944,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 8000
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
@@ -20796,7 +20796,7 @@ PrefabInstance:
       objectReference: {fileID: 255451849}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -22806,7 +22806,7 @@ PrefabInstance:
       objectReference: {fileID: 574713968}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -30145,7 +30145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: precoDaMelhoria
-      value: 80000
+      value: 49000
       objectReference: {fileID: 0}
     - target: {fileID: 6067135682864922988, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: botaoMelhoriaCor
