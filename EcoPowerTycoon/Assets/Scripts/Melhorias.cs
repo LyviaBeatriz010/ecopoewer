@@ -30,6 +30,11 @@ public class Melhorias : MonoBehaviour
     private AudioSource aud;
     public AudioClip somErroAoComprarMelhoria;
 
+    public Image botaoMelhoriaCor;
+
+    private Color vermelhoCor2 = Color.red;
+    private Color brancoCor2 = Color.white;
+
     void Start()
     {
         aud = GetComponent<AudioSource>();
@@ -59,6 +64,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -84,6 +92,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -109,6 +120,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -134,6 +148,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -159,6 +176,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -184,6 +204,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -208,6 +231,9 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
     }
 
@@ -232,6 +258,13 @@ public class Melhorias : MonoBehaviour
         {
             //Audio de compra não bem sucedida
             aud.PlayOneShot(somErroAoComprarMelhoria, 0.2f);
+
+            botaoMelhoriaCor.color = vermelhoCor2;
+            Invoke("VoltarACorNormal", 0.3f);
         }
+    }
+    void VoltarACorNormal()
+    {
+        botaoMelhoriaCor.color = brancoCor2;
     }
 }

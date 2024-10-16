@@ -32,6 +32,12 @@ public class CentroPesquisa : MonoBehaviour
 
    public bool produzindoPontos = false;
 
+   public Image botaoPrincipalCor;
+   public Image botaoBloqueioCor;
+
+   private Color vermelho = Color.red;
+   private Color branco = Color.white;
+
    // public Particulas objParticulas;
    void Start()
    {
@@ -57,6 +63,9 @@ public class CentroPesquisa : MonoBehaviour
          //compra deu errado
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroAoComprarCentro, 0.2f);
+
+         botaoPrincipalCor.color = vermelho;
+         Invoke("VoltarCor", 0.3f);
       }
       
       //verificar se foi o primeiro
@@ -75,7 +84,7 @@ public class CentroPesquisa : MonoBehaviour
       }
 
       StopCoroutine(ProduzindoPontos());
-   }    
+   }
 
    public void DesbloquearCentro()
    {
@@ -102,11 +111,20 @@ public class CentroPesquisa : MonoBehaviour
          //compra deu errado
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroAoComprarCentro, 0.2f);
+
+         botaoBloqueioCor.color = vermelho;
+         Invoke("VoltarCor", 0.3f);
       }
    }
 
    public void AtualizarProducaoEmPesquisa()
    {
        textoPontosPorSegundo.text = pontosPorSegundo + " Pontos/s";
+   }
+
+   void VoltarCor()
+   {
+       botaoBloqueioCor.color = branco;
+       botaoPrincipalCor.color = branco;
    }
 }

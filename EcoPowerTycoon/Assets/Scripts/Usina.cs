@@ -8,7 +8,7 @@ using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Serialization;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 using Button = UnityEngine.UI.Button;
 
 public class Usina : MonoBehaviour
@@ -33,7 +33,14 @@ public class Usina : MonoBehaviour
    public GameObject botaoParaDesbloquear;
 
    public bool produzindo = false;
-   void Start()
+
+   public Image botaoPrincipalCor1;
+   public Image botaoBloqueioCor1;
+
+   private Color vermelhoCor = Color.red;
+   private Color brancoCor = Color.white;
+
+    void Start()
    {
       aud = GetComponent<AudioSource>();
       textoPrecoUsina.text = precoDaUsina.ToString();
@@ -57,7 +64,10 @@ public class Usina : MonoBehaviour
          //compra deu errado
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroNaCompra,0.2f);
-      }
+
+         botaoPrincipalCor1.color = vermelhoCor;
+         Invoke("VoltarACor", 0.3f);
+        }
       
       //verificar se foi o primeiro
       //chamar a corotina aqui
@@ -101,6 +111,9 @@ public class Usina : MonoBehaviour
          //compra deu errado
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroNaCompra, 0.2f);
+
+         botaoBloqueioCor1.color = vermelhoCor;
+         Invoke("VoltarACor", 0.3f);
       }  
    }
    
@@ -129,11 +142,20 @@ public class Usina : MonoBehaviour
          //compra deu errado
          //chamada de audio de fracasso
          aud.PlayOneShot(somErroNaCompra, 0.2f);
+
+         botaoBloqueioCor1.color = vermelhoCor;
+         Invoke("VoltarACor", 0.3f);
       }  
    }
 
    public void AtualizarProducaoPorSegundo()
    {
        textoProducaoPorSegundo.text = producaoPorSegundo + " GW/s";
+   }
+
+   void VoltarACor()
+   {
+       botaoPrincipalCor1.color = brancoCor;
+       botaoBloqueioCor1.color = brancoCor;
    }
 }
