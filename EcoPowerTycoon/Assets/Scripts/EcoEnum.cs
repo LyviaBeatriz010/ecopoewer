@@ -5,9 +5,9 @@ public class EcoEnum
       {
           Ano2026 = 5000,
           Ano2027 = 20000,
-          Ano2028 = 80000,
-          Ano2029 = 320000,
-          Ano2030 = 1280000
+          Ano2028 = 60000,
+          Ano2029 = 80000,
+          Ano2030 = 100000
       }
 
       public enum TipoProducao

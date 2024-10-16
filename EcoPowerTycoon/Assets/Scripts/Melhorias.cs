@@ -49,7 +49,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoEnergiaSolar.producaoPorSegundo++;
+            botaoEnergiaSolar.producaoPorSegundo += 3;
             botaoEnergiaSolar.AtualizarProducaoPorSegundo();
 
             // Atualizando a interface
@@ -78,7 +78,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoCentroBasicoDePesquisaUm.pontosPorSegundo++;
+            botaoCentroBasicoDePesquisaUm.pontosPorSegundo += 3;
             botaoCentroBasicoDePesquisaUm.AtualizarProducaoEmPesquisa();
            
             // Atualizando a interface
@@ -105,7 +105,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoEnergiaEolica.producaoPorSegundo++;
+            botaoEnergiaEolica.producaoPorSegundo += 3;
             botaoEnergiaEolica.AtualizarProducaoPorSegundo();
 
             // Atualizando a interface
@@ -133,7 +133,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoCentroBasicoDePesquisaDois.pontosPorSegundo++;
+            botaoCentroBasicoDePesquisaDois.pontosPorSegundo += 3;
             botaoCentroBasicoDePesquisaDois.AtualizarProducaoEmPesquisa(); 
 
             // Atualizando a interface
@@ -161,7 +161,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoEnergiaHidroeletrica.producaoPorSegundo++;
+            botaoEnergiaHidroeletrica.producaoPorSegundo += 3;
             botaoEnergiaHidroeletrica.AtualizarProducaoPorSegundo();
 
             // Atualizando a interface
@@ -189,7 +189,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            botaoCentroPesquisasNivelMedio.pontosPorSegundo++;
+            botaoCentroPesquisasNivelMedio.pontosPorSegundo += 3;
             botaoCentroPesquisasNivelMedio.AtualizarProducaoEmPesquisa();
 
             // Atualizando a interface
@@ -217,7 +217,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            GameManager.instance.valorPorClique++;
+            GameManager.instance.valorPorClique += 20;
 
             // Atualizando a interface
 
@@ -244,7 +244,7 @@ public class Melhorias : MonoBehaviour
         {
             // Fazendo a melhoria
 
-            GameManager.instance.valorPorClique += 2;
+            GameManager.instance.valorPorClique += 60;
 
             // Atualizando a interface
 

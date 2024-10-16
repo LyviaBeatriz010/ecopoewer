@@ -242,7 +242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 600
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -254,11 +254,11 @@ PrefabInstance:
       objectReference: {fileID: 1930855183}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -5834,7 +5834,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 0b87c67eadb053447968e458001ae507, type: 3}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: precoDoCentro
-      value: 20000
+      value: 3200
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoBloqueioCor
@@ -5842,7 +5842,7 @@ PrefabInstance:
       objectReference: {fileID: 1291389807}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 8
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -5850,7 +5850,7 @@ PrefabInstance:
       objectReference: {fileID: 910868929}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: valorParaDesbloquearCentro
-      value: 10000
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -6086,7 +6086,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_text
-      value: 'Mais 1 ponto por cliques
+      value: 'Mais 20 pontos por cliques
 
 '
       objectReference: {fileID: 0}
@@ -7962,7 +7962,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 1312200
+      value: 51200
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -7974,11 +7974,11 @@ PrefabInstance:
       objectReference: {fileID: 1719392167}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 656100
+      value: 25600
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -8585,7 +8585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 437400
+      value: 25600
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -8597,11 +8597,11 @@ PrefabInstance:
       objectReference: {fileID: 855115617}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 218700
+      value: 12800
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 9
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -9324,7 +9324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 1800
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -9336,11 +9336,11 @@ PrefabInstance:
       objectReference: {fileID: 647133427}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 900
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 4
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -10452,7 +10452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 145800
+      value: 12800
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -10464,11 +10464,11 @@ PrefabInstance:
       objectReference: {fileID: 707749979}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 72900
+      value: 6400
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 8
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -11600,7 +11600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: precoDoCentro
-      value: 2
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoBloqueioCor
@@ -11608,7 +11608,7 @@ PrefabInstance:
       objectReference: {fileID: 1241454002}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -11616,7 +11616,7 @@ PrefabInstance:
       objectReference: {fileID: 1771171172}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: valorParaDesbloquearCentro
-      value: 2
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -15493,7 +15493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 3936600
+      value: 102400
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -15505,11 +15505,11 @@ PrefabInstance:
       objectReference: {fileID: 1106714079}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 1968300
+      value: 51200
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 11
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -16351,7 +16351,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: e01810f7085e7144bb3452b1ca1738e1, type: 3}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: precoDoCentro
-      value: 2000
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoBloqueioCor
@@ -16359,7 +16359,7 @@ PrefabInstance:
       objectReference: {fileID: 1369496043}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 4
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -16367,7 +16367,7 @@ PrefabInstance:
       objectReference: {fileID: 1112017802}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: valorParaDesbloquearCentro
-      value: 1000
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17345,7 +17345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 16200
+      value: 3200
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -17357,11 +17357,11 @@ PrefabInstance:
       objectReference: {fileID: 2073431298}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 8100
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 6
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -18488,7 +18488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 48600
+      value: 6400
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -18500,11 +18500,11 @@ PrefabInstance:
       objectReference: {fileID: 1351539380}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 24300
+      value: 3200
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 7
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -20788,7 +20788,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 14d6df1ddfe4db5489e9b1fc0293b3fd, type: 3}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: precoDoCentro
-      value: 10000
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoBloqueioCor
@@ -20796,7 +20796,7 @@ PrefabInstance:
       objectReference: {fileID: 255451849}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -20804,7 +20804,7 @@ PrefabInstance:
       objectReference: {fileID: 2060662734}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: valorParaDesbloquearCentro
-      value: 5000
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -22798,7 +22798,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d5c4b4a673c9acb48ac137881797cfb0, type: 3}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: precoDoCentro
-      value: 500
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoBloqueioCor
@@ -22806,7 +22806,7 @@ PrefabInstance:
       objectReference: {fileID: 574713968}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: pontosPorSegundo
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: botaoPrincipalCor
@@ -22814,7 +22814,7 @@ PrefabInstance:
       objectReference: {fileID: 1884179854}
     - target: {fileID: 7297736768821424875, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: valorParaDesbloquearCentro
-      value: 250
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7358436678462032947, guid: f143d434d0720364db6c193486f6778e, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -30123,7 +30123,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3944913705023930300, guid: 75ce165bc86a3874e855441462827bc1, type: 3}
       propertyPath: m_text
-      value: 'Mais 2 pontos por cliques
+      value: 'Mais 60 pontos por cliques
 
 '
       objectReference: {fileID: 0}
@@ -31268,7 +31268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDaUsina
-      value: 5400
+      value: 1600
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: botaoBloqueioCor1
@@ -31280,11 +31280,11 @@ PrefabInstance:
       objectReference: {fileID: 2088326547}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: precoDeDesbloqueio
-      value: 2700
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 5
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -31913,7 +31913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_text
@@ -32611,7 +32611,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1138389854475473573, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: producaoPorSegundo
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1147273736627732280, guid: 77229201f485f494aae0301f6a36e7b4, type: 3}
       propertyPath: m_margin.y
