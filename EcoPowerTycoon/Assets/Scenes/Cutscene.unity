@@ -2992,7 +2992,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Desculpe as informalidades, mas falta voc\xEA! Seja o nosso secret\xE1rio
-    de disribui\xE7\xE3o energ\xE9tica."
+    de distribui\xE7\xE3o energ\xE9tica."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3225,6 +3225,8 @@ PlayableDirector:
     value: {fileID: 1579671597}
   - key: {fileID: -3421268118924177220, guid: ab75a3322564e084da6f4c0dda0f1cff, type: 2}
     value: {fileID: 1042030806}
+  - key: {fileID: -6494201424915782217, guid: ab75a3322564e084da6f4c0dda0f1cff, type: 2}
+    value: {fileID: 1456133146}
   m_ExposedReferences:
     m_References:
     - 2ba8f03d0b343254288e3b90f9631c9a: {fileID: 598952376}
@@ -3905,6 +3907,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436138319}
   m_CullTransparentMesh: 1
+--- !u!1 &1456133146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456133148}
+  - component: {fileID: 1456133147}
+  m_Layer: 0
+  m_Name: Carregar Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1456133147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456133146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00cf269994371a94d887aa23277fa25a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  carregarCena: {fileID: 1612602}
+--- !u!4 &1456133148
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456133146}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511893992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,3 +5495,4 @@ SceneRoots:
   - {fileID: 1083256376}
   - {fileID: 1525550486}
   - {fileID: 1612603}
+  - {fileID: 1456133148}
